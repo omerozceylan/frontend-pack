@@ -52,7 +52,10 @@ function createNpmCode(value){
 
 function deleteItemInNpmCode(value){
     if(!itemArray.includes(value)) return
-    itemArray.indexOf(value)
+    console.log(itemArray.indexOf(value))
+    let i = itemArray.indexOf(value)
+    itemArray.splice(i,1)
+    updateTheCodeAndArray()
 }
 
 function updateTheCodeAndArray(){
