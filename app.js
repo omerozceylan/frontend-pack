@@ -13,7 +13,7 @@ let itemsObj = {
 let containerNode = document.querySelector('.items-container')
 
 
-//Print all items in obj
+//Print to html all items in obj
 for(const property in itemsObj){
     let elementHTMLNode = document.createElement('div')
     elementHTMLNode.classList.add('items')
@@ -41,12 +41,13 @@ function createNpmCode(value){
     if(itemArray.includes(value)) return
     itemArray.push(value)
     console.log(itemArray)
-    //theCode value reset everytime. That's because 
+    //theCode value reset everytime. That's because it have to be not reprinting every time
     theCode= ""
     for(let i=0; i<itemArray.length;i++){
-        theCode+= `yarn add ${itemArray[i]}`
+        theCode+= ` ${itemArray[i]}`
     }
-    console.log(theCode)
+    let theNpmOut = `npm install${theCode}`
+    console.log('npm code: ' + theNpmOut)
 }
 
 
