@@ -13,7 +13,7 @@ let itemsObj = {
 let containerNode = document.querySelector('.items-container')
 
 
-//Print to html all items in obj
+//Print to htm all items in obj
 for(const property in itemsObj){
     let elementHTMLNode = document.createElement('div')
     elementHTMLNode.classList.add('items')
@@ -25,6 +25,7 @@ const items = document.querySelectorAll('.items')
 
 items.forEach(element => {
     element.addEventListener('click', returnEqual)
+    element.addEventListener('dblclick',returnEqualForDeleting)
 })
 
 function returnEqual(){
@@ -33,14 +34,28 @@ function returnEqual(){
     createNpmCode(objReturn)
 }
 
-let itemArray = []
+function returnEqualForDeleting(){
+    const clickedElement = this.innerHTML
+    const objReturn = itemsObj[clickedElement]
+    deleteItemInNpmCode(objReturn)
+}
 
+let itemArray = []
 let theCode = ""
 
 function createNpmCode(value){
     if(itemArray.includes(value)) return
     itemArray.push(value)
     console.log(itemArray)
+    updateTheCodeAndArray()
+}
+
+function deleteItemInNpmCode(value){
+    if(!itemArray.includes(value)) return
+    itemArray.indexOf(value)
+}
+
+function updateTheCodeAndArray(){
     //theCode value reset everytime. That's because it have to be not reprinting every time
     theCode= ""
     for(let i=0; i<itemArray.length;i++){
@@ -49,7 +64,5 @@ function createNpmCode(value){
     let theNpmOut = `npm install${theCode}`
     console.log('npm code: ' + theNpmOut)
 }
-
-
 
 
