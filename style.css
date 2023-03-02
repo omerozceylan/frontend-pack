@@ -74,7 +74,7 @@ section {
 .items-img {
     margin-top: 10px;
     width: 290px;
-    height: 200px;
+    height: 160px;
     border: solid 2px black;
 }
 
@@ -82,7 +82,7 @@ section {
     display: flex;
     justify-content:space-between ;
     align-items: center;
-    height: 50px;
+    height: 70px;
     width: 100%;
     padding: 10px 25px;
     color: #1D181A;
