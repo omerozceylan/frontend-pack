@@ -70,7 +70,7 @@ const packages = [
       },
       {
         name: "lodash",
-        imgUrl:"https://miro.medium.com/max/724/1*l4BF9iwM9S5_TSpy8AcHcA.png",
+        imgUrl:"https://miro.medium.com/max/800/1*3NrSA_osjPYn2rKVvjIGCw.png",
         key: 'lodash',
         info: 'JavaScript kütüphanesi, dizi, string, nesne vb. işlemleri yapmayı kolaylaştırır.',
         isClicked:false 
@@ -195,7 +195,7 @@ const packages = [
       },
       {
         name:'firebase',
-        imgUrl:"https://miro.medium.com/max/1400/1*5kLHVW2DvldK45KcNOrQdA.png",
+        imgUrl:"https://firebase.google.com/images/social.png",
         key: "firebase",
         info: "Google tarafından sağlanan bir bulut tabanlı hizmet, özellikle mobil ve web uygulamaları için kullanılır.",
         isClicked:false 
@@ -209,13 +209,13 @@ const packages = [
       },
       {
         name:'jest',
-        imgUrl:"https://jestjs.io/img/opengraph.png",
+        imgUrl:"https://miro.medium.com/max/796/1*VxBKV4bcUJ4M7WCuCNmHWw.png",
         key: "jest",
         info: "JavaScript uygulamaları için test framework'ü.",
         isClicked:false 
       },{
         name:'mocha',
-        imgUrl:"https://miro.medium.com/max/1012/1*z0efv86xpRVn4SMWDZgeYQ.png",
+        imgUrl:"https://pbs.twimg.com/media/Eh23ihMVoAEGbaf.jpg:large",
         key: "mocha",
         info: "JavaScript uygulamaları için test framework'ü.",
         isClicked:false 
@@ -229,7 +229,7 @@ const packages = [
       },
       {
         name:'cypress',
-        imgUrl:"https://miro.medium.com/max/1400/1*Jkb_tsMBOvL6wQ8bzldu8Q.png",
+        imgUrl:"https://pbs.twimg.com/media/DMqWohuXkAEBD1I.jpg",
         key: "cypress",
         info: "End-to-end testleri çalıştırmak için kullanılan bir JavaScript kütüphanesi.",
         isClicked:false 

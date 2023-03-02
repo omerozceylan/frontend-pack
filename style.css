@@ -69,12 +69,13 @@ section {
     height: 230px;
     background-color: #F0EDE2;
     color: #1D181A;
-    margin: 20px;
+    margin: 13px;
+    margin-bottom: 5px;
 }
 
 .items-img {
     margin-top: 10px;
-    width: 290px;
+    width: 280px;
     height: 160px;
     border: solid 2px black;
 }
@@ -96,8 +97,26 @@ section {
 }
 
 .items-info-button {
-    font-size: 30px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    border-radius: 100px;
+    transition: 0.2s;
 }
+
+.items-info-button:hover {
+    background-color: #1D181A;
+    color: #F0EDE2;
+}
+
+.items-info-button:active {
+    background-color: darkslategrey;
+}
+
 
 .img {
     width: 100%;
