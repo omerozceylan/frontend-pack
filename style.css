@@ -69,6 +69,7 @@ section {
     height: 230px;
     background-color: #F0EDE2;
     color: #1D181A;
+    margin: 20px;
 }
 
 .items-img {
@@ -102,4 +103,12 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
 }
