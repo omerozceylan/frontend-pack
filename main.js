@@ -3,202 +3,296 @@ import './style.css'
 let itemArray = []
 let theCode = ""
 
-const packages = {
-    react: {
+const packages = [
+      {
+        name:"React",
         key: 'react',
-        info: 'Facebook tarafından geliştirilen bir JavaScript kütüphanesi, özellikle web arayüzleri oluşturmak için kullanılır.'
+        info: 'Facebook tarafından geliştirilen bir JavaScript kütüphanesi, özellikle web arayüzleri oluşturmak için kullanılır.',
+        isClicked:false 
       },
-      'vue.js': {
+      { name:"Vue.js",
         key: 'vue',
-        info: 'Bir JavaScript framework\'ü, özellikle web arayüzleri oluşturmak için kullanılır.'
+        info: 'Bir JavaScript framework\'ü, özellikle web arayüzleri oluşturmak için kullanılır.',
+        isClicked:false 
+
       },
-      angular: {
+      {
+        name:"Angular",
         key: '@angular/core',
-        info: 'Google tarafından geliştirilen bir JavaScript framework\'ü, özellikle büyük ve karmaşık uygulamalar oluşturmak için kullanılır.'
+        info: 'Google tarafından geliştirilen bir JavaScript framework\'ü, özellikle büyük ve karmaşık uygulamalar oluşturmak için kullanılır.',
+        isClicked:false 
       },
-      bootstrap: {
+      { name: "Bootstrap",
         key: 'bootstrap',
-        info: 'Twitter tarafından geliştirilen bir CSS framework\'ü, özellikle mobil uyumlu web siteleri oluşturmak için kullanılır.'
+        info: 'Twitter tarafından geliştirilen bir CSS framework\'ü, özellikle mobil uyumlu web siteleri oluşturmak için kullanılır.',
+        isClicked:false 
       },
-      'material ui': {
+      {
+        name:"material ui",
         key: '@material-ui/core',
-        info: 'Google\'ın Material Design konseptine dayalı React bileşenleri koleksiyonu.'
+        info: 'Google\'ın Material Design konseptine dayalı React bileşenleri koleksiyonu.',
+        isClicked:false 
       },
-      'tailwind css': {
+      {
+        name:"tailwind css",
         key: 'tailwindcss',
-        info: 'CSS utility framework\'ü, hızlı bir şekilde özelleştirilebilir bileşenler oluşturmak için kullanılır.'
+        info: 'CSS utility framework\'ü, hızlı bir şekilde özelleştirilebilir bileşenler oluşturmak için kullanılır.',
+        isClicked:false 
       },
-      'next.js': {
+      {
+        name:"next.js",
         key: 'next',
-        info: 'React tabanlı bir web framework\'ü, özellikle SEO dostu ve hızlı web siteleri oluşturmak için kullanılır.'
+        info: 'React tabanlı bir web framework\'ü, özellikle SEO dostu ve hızlı web siteleri oluşturmak için kullanılır.',
+        isClicked:false 
       },
-      gatsby: {
+      {
+        name:"gatsby",
         key: 'gatsby',
-        info: 'React tabanlı bir web framework\'ü, özellikle statik web siteleri oluşturmak için kullanılır.'
+        info: 'React tabanlı bir web framework\'ü, özellikle statik web siteleri oluşturmak için kullanılır.',
+        isClicked:false 
       },
-      jquery: {
+      {
+        name:"jquery",
         key: 'jquery',
-        info: 'HTML belgesindeki elementleri manipüle etmek ve etkileşimli öğeler oluşturmak için kullanılan bir JavaScript kütüphanesi.'
+        info: 'HTML belgesindeki elementleri manipüle etmek ve etkileşimli öğeler oluşturmak için kullanılan bir JavaScript kütüphanesi.',
+        isClicked:false 
       },
-      lodash: {
+      {
+        name: "lodash",
         key: 'lodash',
-        info: 'JavaScript kütüphanesi, dizi, string, nesne vb. işlemleri yapmayı kolaylaştırır.'
+        info: 'JavaScript kütüphanesi, dizi, string, nesne vb. işlemleri yapmayı kolaylaştırır.',
+        isClicked:false 
       },
-      redux: {
+      { 
+        name:'redux',
         key: 'redux',
-        info: 'JavaScript uygulamaları için bir state yönetim kütüphanesi.'
+        info: 'JavaScript uygulamaları için bir state yönetim kütüphanesi.',
+        isClicked:false 
       },
-      sass: {
+      {
+        name: 'sass',
         key: 'sass',
-        info: 'CSS preprocessor\'ü, daha okunaklı ve yönetilebilir CSS kodları oluşturmayı sağlar.'
+        info: 'CSS preprocessor\'ü, daha okunaklı ve yönetilebilir CSS kodları oluşturmayı sağlar.',
+        isClicked:false 
       },
-      'styled-components': {
+      {
+        name:'styled-components',
         key: 'styled-components',
-        info: 'CSS-in-JS kütüphanesi, bileşenlerin stillerini içerikle birleştirir.'
+        info: 'CSS-in-JS kütüphanesi, bileşenlerin stillerini içerikle birleştirir.',
+        isClicked:false 
       },
-      webpack: {
+      {
+        name:'webpack',
         key: 'webpack',
-        info: 'JavaScript dosyalarını birleştirmek, sıkıştırmak ve yönetmek için kullanılan bir araç.'
+        info: 'JavaScript dosyalarını birleştirmek, sıkıştırmak ve yönetmek için kullanılan bir araç.',
+        isClicked:false 
       },
-      babel: {
+      {
+        name: 'babel',
         key: '@babel/core',
-        info: 'JavaScript kodunu eski tarayıcılar için uyumlu hale getirmek için kullanılan bir transpiler.'
+        info: 'JavaScript kodunu eski tarayıcılar için uyumlu hale getirmek için kullanılan bir transpiler.',
+        isClicked:false 
       },
-      eslint: {
-      key: "eslint",
-      info: "JavaScript kodunu analiz ederek stil ve hata hatalarını bulmaya yarayan bir araç."
+      {
+        name:'eslint',
+        key: "eslint",
+        info: "JavaScript kodunu analiz ederek stil ve hata hatalarını bulmaya yarayan bir araç.",
+        isClicked:false 
       },
-      prettier: {
-      key: "prettier",
-      info: "JavaScript kodunu otomatik olarak biçimlendiren bir araç."
+      {
+        name: 'prettier',
+        key: "prettier",
+        info: "JavaScript kodunu otomatik olarak biçimlendiren bir araç.",
+        isClicked:false 
       },
-      axios: {
-      key: "axios",
-      info: "JavaScript uygulamaları için HTTP istekleri göndermek için kullanılan bir kütüphane."
+      {
+        name: 'axios',
+        key: "axios",
+        info: "JavaScript uygulamaları için HTTP istekleri göndermek için kullanılan bir kütüphane.",
+        isClicked:false 
       },
-      "react native": {
-      key: "react-native",
-      info: "React tabanlı mobil uygulama geliştirme framework'ü."
+      {
+        name:'react native',   
+        key: "react-native",
+        info: "React tabanlı mobil uygulama geliştirme framework'ü.",
+        isClicked:false 
       },
-      ionic: {
-      key: "@ionic/core",
-      info: "Mobile uygulama geliştirme framework'ü, Angular veya React kullanarak mobil uygulamalar oluşturmak için kullanılır."
+      {
+        name:'ionic',  
+        key: "@ionic/core",
+        info: "Mobile uygulama geliştirme framework'ü, Angular veya React kullanarak mobil uygulamalar oluşturmak için kullanılır.",
+        isClicked:false 
       },
-      "chart.js": {
-      key: "chart.js",
-      info: "Grafik ve veri görselleştirmesi için kullanılan bir JavaScript kütüphanesi."
+      {
+        name:'chart.js',  
+        key: "chart.js",
+        info: "Grafik ve veri görselleştirmesi için kullanılan bir JavaScript kütüphanesi.",
+        isClicked:false 
       },
-      "d3.js": {
-      key: "d3",
-      info: "Grafik ve veri görselleştirme için kullanılan bir JavaScript kütüphanesi."
+      {
+        name:'d3.js',  
+        key: "d3",
+        info: "Grafik ve veri görselleştirme için kullanılan bir JavaScript kütüphanesi.",
+        isClicked:false 
       },
-      "three.js": {
-      key: "three",
-      info: "WebGL teknolojisi kullanarak 3D grafikler oluşturmak için kullanılan bir JavaScript kütüphanesi."
+      {
+        name:'three.js',  
+        key: "three",
+        info: "WebGL teknolojisi kullanarak 3D grafikler oluşturmak için kullanılan bir JavaScript kütüphanesi.",
+        isClicked:false 
       },
-      phaser: {
-      key: "phaser",
-      info: "JavaScript tabanlı bir oyun geliştirme framework'ü."
+      {
+        name:'phaser',  
+        key: "phaser",
+        info: "JavaScript tabanlı bir oyun geliştirme framework'ü.",
+        isClicked:false 
       },
-      "socket.io": {
-      key: "socket.io",
-      info: "Websocket teknolojisi kullanarak gerçek zamanlı iletişim kurmak için kullanılan bir JavaScript kütüphanesi."
+      {
+        name:'socket.io',  
+        key: "socket.io",
+        info: "Websocket teknolojisi kullanarak gerçek zamanlı iletişim kurmak için kullanılan bir JavaScript kütüphanesi.",
+        isClicked:false 
       },
-      express: {
-      key: "express",
-      info: "Node.js tabanlı bir web uygulama framework'ü."
+      {
+        name:'express',
+        key: "express",
+        info: "Node.js tabanlı bir web uygulama framework'ü.",
+        isClicked:false 
       },
-      koa: {
-      key: "koa",
-      info: "Node.js tabanlı bir web uygulama framework'ü."
+      {
+        name:'koa',
+        key: "koa",
+        info: "Node.js tabanlı bir web uygulama framework'ü.",
+        isClicked:false 
+      },{
+        name:'passport',
+        key: "passport",
+        info: "Node.js uygulamaları için kullanıcı kimlik doğrulama ve yetkilendirme için kullanılan bir kütüphane.",
+        isClicked:false 
       },
-      passport: {
-      key: "passport",
-      info: "Node.js uygulamaları için kullanıcı kimlik doğrulama ve yetkilendirme için kullanılan bir kütüphane."
+      {
+        name:'firebase',
+        key: "firebase",
+        info: "Google tarafından sağlanan bir bulut tabanlı hizmet, özellikle mobil ve web uygulamaları için kullanılır.",
+        isClicked:false 
       },
-      firebase: {
-      key: "firebase",
-      info: "Google tarafından sağlanan bir bulut tabanlı hizmet, özellikle mobil ve web uygulamaları için kullanılır."
+      {
+        name:'aws sdk',
+        key: "aws-sdk",
+        info: "Amazon Web Services (AWS) için bir JavaScript kütüphanesi, bulut tabanlı uygulamalar oluşturmak için kullanılır.",
+        isClicked:false 
       },
-      "aws sdk": {
-      key: "aws-sdk",
-      info: "Amazon Web Services (AWS) için bir JavaScript kütüphanesi, bulut tabanlı uygulamalar oluşturmak için kullanılır."
+      {
+        name:'jest',
+        key: "jest",
+        info: "JavaScript uygulamaları için test framework'ü.",
+        isClicked:false 
+      },{
+        name:'mocha',
+        key: "mocha",
+        info: "JavaScript uygulamaları için test framework'ü.",
+        isClicked:false 
       },
-      jest: {
-      key: "jest",
-      info: "JavaScript uygulamaları için test framework'ü."
+      {
+        name:'chai',
+        key: "chai",
+        info: "JavaScript uygulamaları için bir test yazma kütüphanesi.",
+        isClicked:false 
       },
-      mocha: {
-      key: "mocha",
-      info: "JavaScript uygulamaları için test framework'ü."
+      {
+        name:'cypress',
+        key: "cypress",
+        info: "End-to-end testleri çalıştırmak için kullanılan bir JavaScript kütüphanesi.",
+        isClicked:false 
       },
-      chai: {
-      key: "chai",
-      info: "JavaScript uygulamaları için bir test yazma kütüphanesi."
+      {
+        name:'puppeteer',
+        key: "puppeteer",
+        info: "Chromium tabanlı tarayıcıları otomatikleştirmek için kullanılan bir kütüphane.",
+        isClicked:false 
       },
-      cypress: {
-      key: "cypress",
-      info: "End-to-end testleri çalıştırmak için kullanılan bir JavaScript kütüphanesi."
+      {
+        name:'storybook',
+        key: "storybook",
+        info: "React bileşenleri için bir UI geliştirme ortamı.",
+        isClicked:false 
       },
-      puppeteer: {
-      key: "puppeteer",
-      info: "Chromium tabanlı tarayıcıları otomatikleştirmek için kullanılan bir kütüphane."
+      {
+        name:'figma-api',
+        key: "figma-api",
+        info: "Tasarım araçlarıyla etkileşim kurmak için kullanılan bir API.",
+        isClicked:false 
       },
-      storybook: {
-      key: "storybook",
-      info: "React bileşenleri için bir UI geliştirme ortamı."
+      {
+        name:'google-maps-api',
+        key: "google-maps-api",
+        info: "Google Haritalar özelliklerine erişmek için kullanılan bir API.",
+        isClicked:false 
       },
-      "figma-api": {
-      key: "figma-api",
-      info: "Tasarım araçlarıyla etkileşim kurmak için kullanılan bir API."
+      {
+        name:'stripe-api',
+        key: "stripe-api",
+        info: "Online ödeme işlemleri için kullanılan bir API.",
+        isClicked:false 
       },
-      "google-maps-api": {
-      key: "google-maps-api",
-      info: "Google Haritalar özelliklerine erişmek için kullanılan bir API."
+      {
+        name:'twilio-api',
+        key: "twilio-api",
+        info: "SMS, ses ve video iletişimleri için kullanılan bir API.",
+        isClicked:false 
       },
-      "stripe-api": {
-      key: "stripe-api",
-      info: "Online ödeme işlemleri için kullanılan bir API."
+      {
+        name:'sendgrid-api',
+        key: "sendgrid-api",
+        info: "E-posta göndermek için kullanılan bir API.",
+        isClicked:false 
       },
-      "twilio-api": {
-      key: "twilio-api",
-      info: "SMS, ses ve video iletişimleri için kullanılan bir API."
+      {
+        name:'nodemailer',
+        key: "nodemailer",
+        info: "Node.js uygulamaları için e-posta göndermek için kullanılan bir kütüphane.",
+        isClicked:false 
       },
-      "sendgrid-api": {
-      key: "sendgrid-api",
-      info: "E-posta göndermek için kullanılan bir API."
+      {
+        name:'moment.js',
+        key: "moment.js",
+        info: "JavaScript'te tarih ve saatlerle çalışmak için kullanılan bir kütüphane.",
+        isClicked:false 
       },
-      nodemailer: {
-      key: "nodemailer",
-      info: "Node.js uygulamaları için e-posta göndermek için kullanılan bir kütüphane."
+      {
+        name:'react-router',
+        key: "react-router",
+        info: "React uygulamalarında yönlendirme yapmak için kullanılan bir kütüphane.",
+        isClicked:false 
       },
-      "moment.js": {
-      key: "moment.js",
-      info: "JavaScript'te tarih ve saatlerle çalışmak için kullanılan bir kütüphane."
+      {
+        name:'reach-router',
+        key: "reach-router",
+        info: "React uygulamalarında erişilebilir yönlendirme yapmak için kullanılan bir kütüphane.",
+        isClicked:false 
       },
-      "react-router": {
-      key: "react-router",
-      info: "React uygulamalarında yönlendirme yapmak için kullanılan bir kütüphane."
+      {
+        name:'formik',
+        key: "formik",
+        info: "React uygulamalarında form işlemleri yapmak için kullanılan bir kütüphane.",
+        isClicked:false 
+      }, 
+      {
+        name:'yup',
+        key: "yup",
+        info: "JavaScript uygulamalarında veri doğrulama işlemleri yapmak için kullanılan bir kütüphane.",
+        isClicked:false 
       },
-      "reach-router": {
-      key: "reach-router",
-      info: "React uygulamalarında erişilebilir yönlendirme yapmak için kullanılan bir kütüphane."
-      },
-      formik: {
-      key: "formik",
-      info: "React uygulamalarında form işlemleri yapmak için kullanılan bir kütüphane."
-      },
-      yup: {
-      key: "yup",
-      info: "JavaScript uygulamalarında veri doğrulama işlemleri yapmak için kullanılan bir kütüphane."
-      },
-      grommet: {
-      key: "grommet",
-      info: "React tabanlı bir UI bileşenleri kütüphanesi."
+      {
+        name:"Grommet",
+        key: "grommet",
+        info: "React tabanlı bir UI bileşenleri kütüphanesi.",
+        isClicked:false 
      }
     
     
-    }
+    ]
+
 
 
 
@@ -206,12 +300,7 @@ let containerNode = document.querySelector('.items-container')
 
 
 //Print to htm all items in obj
-for(const property in itemsObj){
-    let elementHTMLNode = document.createElement('div')
-    elementHTMLNode.classList.add('items')
-    elementHTMLNode.innerHTML = property
-    containerNode.appendChild(elementHTMLNode)
-}
+
 
 const items = document.querySelectorAll('.items')
 
