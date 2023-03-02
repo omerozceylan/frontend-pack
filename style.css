@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@500&display=swap');
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Genos', sans-serif;
+    color: #F0EDE2;
+}
+
+body {
+    background-color:#1D181A;
+}
+
+button {
+    text-align: inherit;
+    border: none;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+}
+
+.container {
+   width:1250px;
+   padding: 1.5rem;
+}
+
+.info-button {
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.info-button:hover {
+    background-color: rgba(198, 182, 182, 0)
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 230px;
+    background-color: #F0EDE2;
+    color: #1D181A;
+}
+
+.items-img {
+    margin-top: 10px;
+    width: 290px;
+    height: 200px;
+    border: solid 2px black;
+}
+
+.items-button-container {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 10px 25px;
+    color: #1D181A;
+}
+
+.items-title {
+    font-weight: 600;
+    color: #1D181A;
+    font-size: 25px;
+}
+
+.items-info-button {
+    font-size: 30px
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
