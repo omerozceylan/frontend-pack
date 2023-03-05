@@ -324,13 +324,17 @@ const packages = [
   
   ]
 
-export {packages}
+console.log('before '+ packages);
+  export {packages}
 
+console.log('after '+ packages);
 
 let containerNode = document.querySelector('.items-container')
 
+
 //Print to html all items in obj
 packages.forEach((item)=> {
+ 
   let html = `
             <div class="items">
                 <div class="select-section">
