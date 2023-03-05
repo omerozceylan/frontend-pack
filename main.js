@@ -8,15 +8,6 @@
 //   });
 
 
-
-
-
-
-
-
-
-import './style.css'
-
 let itemArray = []
 let theCode = ""
 
