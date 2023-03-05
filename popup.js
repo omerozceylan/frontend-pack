@@ -5,7 +5,6 @@ const popUp = document.querySelector('.modal')
 const popUpCloseButton = document.querySelector('.pop-up-button')
 const popUpInner = document.querySelector('.pop-up-info')
 
-console.log('popup js icinde clg to data js: ' + packages);
 
 infoButton.forEach((item)=> {
     item.addEventListener('click',()=>{
