@@ -324,7 +324,7 @@ const packages = [
   
   ]
 
-
+let popUpInner = document.querySelector('.pop-up-info')
 let containerNode = document.querySelector('.items-container')
 
 //Print to html all items in obj
@@ -345,3 +345,39 @@ packages.forEach((item)=> {
 
 }
 )
+
+
+let infoButtons = document.querySelectorAll('.items-info-button')
+let nameToFind = ''
+
+
+
+infoButtons.forEach((item)=>{
+    item.addEventListener('click',function(){
+        const div1 = this.parentElement
+        const itemTitle = div1.querySelector('.items-title')
+        nameToFind = itemTitle.innerHTML
+        console.log(nameToFind);
+        findIndexFromArray(nameToFind)
+        
+    })
+})
+
+
+function findIndexFromArray(nameToFind){
+  let index = packages.findIndex(function(product){
+      return product.name === nameToFind 
+  })
+  const popUpInfo = returnObjectInfo(index)
+  reWritePopUp(popUpInfo)
+}
+
+function returnObjectInfo(index){
+  const object = packages[index]
+  return object.info
+   
+}
+
+function reWritePopUp(text='hata: bilgi bulunamadı'){
+    popUpInner.innerHTML = text
+}

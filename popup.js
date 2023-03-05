@@ -12,10 +12,3 @@ infoButton.forEach((item)=> {
 popUpCloseButton.addEventListener('click', ()=> {
     popUp.close()
 })
-
-
-
-function openPopUp(text){
-   
-}
-
