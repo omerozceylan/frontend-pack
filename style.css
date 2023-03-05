@@ -107,6 +107,7 @@ section {
     height: 30px;
     border-radius: 100px;
     transition: 0.2s;
+    user-select: none;
 }
 
 .items-info-button:hover {
@@ -204,6 +205,10 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.select-section {
+    cursor: pointer;
 }
 
 /* .modal {

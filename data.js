@@ -331,8 +331,10 @@ let containerNode = document.querySelector('.items-container')
 packages.forEach((item)=> {
   let html = `
             <div class="items">
-                <div class="items-img">
-                    <img src="${item.imgUrl}" class="img">
+                <div class="select-section">
+                 <div class="items-img">
+                      <img src="${item.imgUrl}" class="img">
+                  </div>
                 </div>
                 <div class="items-button-container">
                     <div class="items-title">${item.name}</div>
