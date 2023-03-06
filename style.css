@@ -72,6 +72,11 @@ section {
     color: #1D181A;
     margin: 13px;
     margin-bottom: 5px;
+    transition: 0.4s;
+}
+
+.clicked {
+    background-color: #9e9b96;
 }
 
 .items-img {

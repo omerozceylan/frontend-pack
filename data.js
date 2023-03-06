@@ -324,10 +324,9 @@ const packages = [
   
   ]
 
-console.log('before '+ packages);
+
   export {packages}
 
-console.log('after '+ packages);
 
 let containerNode = document.querySelector('.items-container')
 

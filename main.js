@@ -1,3 +1,6 @@
+import { packages } from "./data"
+
+
 // import { gsap } from './node_modules/gsap'
 // gsap.registerPlugin(ScrollSmoother)
 
@@ -8,27 +11,45 @@
 //   });
 
 
+const items = document.querySelectorAll('.select-section')
+
+items.forEach(element => {
+    element.addEventListener('click', returnPackageKey)
+    // element.addEventListener('dblclick',returnEqualForDeleting)
+})
+
 let itemArray = []
 let theCode = ""
 
-const items = document.querySelectorAll('.items')
+// console.log(packages[16].key + 'main js...');
 
-// items.forEach(element => {
-//     element.addEventListener('click', returnEqual)
-//     element.addEventListener('dblclick',returnEqualForDeleting)
-// })
-
-function returnEqual(){
-    const clickedElement = this.innerHTML
-    const objReturn = itemsObj[clickedElement]
-    createNpmCode(objReturn)
+function returnPackageKey(){
+    const item = this.parentElement
+    changeColorCard(item)
+    const itemTitle = item.querySelector('.items-title').innerHTML
+    let index = findIndexFromArray(itemTitle);
+    let obj = packages[index]
+    createNpmCode(obj.key)
 }
 
-function returnEqualForDeleting(){
-    const clickedElement = this.innerHTML
-    const objReturn = itemsObj[clickedElement]
-    deleteItemInNpmCode(objReturn)
+function changeColorCard(item){
+    item.classList.toggle('clicked')
 }
+
+function findIndexFromArray(nameToFind){
+    let index = packages.findIndex(function(product){
+    return product.name === nameToFind 
+    })
+    return index
+}
+
+
+
+// function returnEqualForDeleting(){
+//     const clickedElement = this.innerHTML
+//     const objReturn = itemsObj[clickedElement]
+//     deleteItemInNpmCode(objReturn)
+// }
 
 
 function createNpmCode(value){
@@ -38,13 +59,13 @@ function createNpmCode(value){
     updateTheCodeAndArray()
 }
 
-function deleteItemInNpmCode(value){
-    if(!itemArray.includes(value)) return
-    console.log(itemArray.indexOf(value))
-    const i = itemArray.indexOf(value)
-    itemArray.splice(i,1)
-    updateTheCodeAndArray()
-}
+// function deleteItemInNpmCode(value){
+//     if(!itemArray.includes(value)) return
+//     console.log(itemArray.indexOf(value))
+//     const i = itemArray.indexOf(value)
+//     itemArray.splice(i,1)
+//     updateTheCodeAndArray()
+// }
 
 function updateTheCodeAndArray(){
     //theCode value reset everytime. That's because it have to be not reprinting every time
@@ -52,7 +73,7 @@ function updateTheCodeAndArray(){
     for(let i=0; i<itemArray.length;i++){
         theCode+= ` ${itemArray[i]}`
     }
-    let theNpmOut = `{theCode}`
+    console.log(theCode + 'the codeee');
+    let theNpmOut = `npm install${theCode}`
     console.log('npm code: ' + theNpmOut)
 }
-
