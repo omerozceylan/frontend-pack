@@ -43,29 +43,17 @@ function findIndexFromArray(nameToFind){
     return index
 }
 
-
-
-// function returnEqualForDeleting(){
-//     const clickedElement = this.innerHTML
-//     const objReturn = itemsObj[clickedElement]
-//     deleteItemInNpmCode(objReturn)
-// }
-
-
 function createNpmCode(value){
-    if(itemArray.includes(value)) return
-    itemArray.push(value)
-    console.log(itemArray)
+    if(itemArray.includes(value)){
+        const i = itemArray.indexOf(value)
+        itemArray.splice(i,1)
+        console.log(itemArray)
+    }else{
+        itemArray.push(value)
+        console.log(itemArray)
+    }
     updateTheCodeAndArray()
 }
-
-// function deleteItemInNpmCode(value){
-//     if(!itemArray.includes(value)) return
-//     console.log(itemArray.indexOf(value))
-//     const i = itemArray.indexOf(value)
-//     itemArray.splice(i,1)
-//     updateTheCodeAndArray()
-// }
 
 function updateTheCodeAndArray(){
     //theCode value reset everytime. That's because it have to be not reprinting every time
@@ -77,3 +65,18 @@ function updateTheCodeAndArray(){
     let theNpmOut = `npm install${theCode}`
     console.log('npm code: ' + theNpmOut)
 }
+
+// function returnEqualForDeleting(){
+//     const clickedElement = this.innerHTML
+//     const objReturn = itemsObj[clickedElement]
+//     deleteItemInNpmCode(objReturn)
+// }
+
+
+
+// function deleteItemInNpmCode(value){
+//     if(!itemArray.includes(value)) return
+//     console.log(itemArray.indexOf(value))
+//    
+// }
+
