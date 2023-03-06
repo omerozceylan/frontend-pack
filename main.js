@@ -12,12 +12,15 @@ import { packages } from "./data"
 
 
 const items = document.querySelectorAll('.select-section')
+const containerOfCodeShowDiv = document.querySelector('.show-code-container')
+
 
 items.forEach(element => {
     element.addEventListener('click', returnPackageKey)
     // element.addEventListener('dblclick',returnEqualForDeleting)
 })
 
+changeVisibiltyOfCode(0)
 let itemArray = []
 let theCode = ""
 let showCodeDiv = document.querySelector('.show-code-inner-text')
@@ -50,6 +53,7 @@ function createNpmCode(value){
         itemArray.splice(i,1)
         console.log(itemArray)
     }else{
+
         itemArray.push(value)
         console.log(itemArray)
     }
@@ -62,7 +66,11 @@ function updateTheCodeAndArray(){
     for(let i=0; i<itemArray.length;i++){
         theCode+= ` ${itemArray[i]}`
     }
-    console.log(theCode + 'the codeee');
+    
+    //if there is a no code in "theCode" variable, code showing container will be gone
+    if(theCode == "") changeVisibiltyOfCode(0)
+    else{changeVisibiltyOfCode(1)}
+
     let theNpmOut = `npm install${theCode}`
     console.log('npm code: ' + theNpmOut)
     showCode(theNpmOut)
@@ -72,9 +80,13 @@ function showCode(theNpmOut){
     showCodeDiv.innerHTML = theNpmOut
 }
 
-
-
-
+function changeVisibiltyOfCode(value){
+    if(value == 1){
+        containerOfCodeShowDiv.style.display = "flex"
+    }else{
+        containerOfCodeShowDiv.style.display = "none"
+    }
+}
 
 
 // function returnEqualForDeleting(){

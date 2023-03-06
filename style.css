@@ -217,7 +217,7 @@ section {
 }
 
 .show-code-container {
-    display: flex;
+    display: none;
     justify-content: center;
     height: 200px;
     width: 100%;
@@ -236,6 +236,9 @@ section {
     width: 600px;
     height: 100px;
     background-color: #609966;
+    box-shadow: -1px 1px 30px 7px rgba(0,0,0,0.71);
+-webkit-box-shadow: -1px 1px 30px 7px rgba(0,0,0,0.71);
+-moz-box-shadow: -1px 1px 30px 7px rgba(0,0,0,0.71);
 }
 
 .show-code-div-inner{
@@ -260,14 +263,21 @@ section {
     color: #1D181A;
 }
 
-.show-code-div-icon{
-}
-
 .copy-svg {
     cursor: pointer;
+    color: #1D181A;
     width: 40px;
     height: 40px;
 }
+
+.copy-svg:hover {
+    background-color: #9e9b9636;
+}
+
+.copy-svg:active {
+    background-color: #1d181a89;
+}
+
 
 /* .copy-svg:hover {
     color: ;
