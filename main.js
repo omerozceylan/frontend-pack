@@ -20,6 +20,7 @@ items.forEach(element => {
 
 let itemArray = []
 let theCode = ""
+let showCodeDiv = document.querySelector('.show-code-div')
 
 // console.log(packages[16].key + 'main js...');
 
@@ -65,6 +66,15 @@ function updateTheCodeAndArray(){
     let theNpmOut = `npm install${theCode}`
     console.log('npm code: ' + theNpmOut)
 }
+
+function showCode(){
+    showCodeDiv.innerHTML = theNpmOut
+}
+
+
+
+
+
 
 // function returnEqualForDeleting(){
 //     const clickedElement = this.innerHTML
