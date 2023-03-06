@@ -20,7 +20,7 @@ items.forEach(element => {
 
 let itemArray = []
 let theCode = ""
-let showCodeDiv = document.querySelector('.show-code-div')
+let showCodeDiv = document.querySelector('.show-code-inner-text')
 
 // console.log(packages[16].key + 'main js...');
 
@@ -65,9 +65,10 @@ function updateTheCodeAndArray(){
     console.log(theCode + 'the codeee');
     let theNpmOut = `npm install${theCode}`
     console.log('npm code: ' + theNpmOut)
+    showCode(theNpmOut)
 }
 
-function showCode(){
+function showCode(theNpmOut){
     showCodeDiv.innerHTML = theNpmOut
 }
 

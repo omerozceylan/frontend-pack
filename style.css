@@ -222,11 +222,55 @@ section {
     height: 200px;
     width: 100%;
     background-color: #1D181A;
-    position: fixed;
+    
 }
 
-/* .show-code-div {
-    
+.show-code-div {
+
+    display: flex;
+    position: fixed;
+    bottom: 70px;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 5px;
+    width: 600px;
+    height: 100px;
+    background-color: #609966;
+}
+
+.show-code-div-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+    color: #1D181A;
+    background-color: #F0EDE2;
+}
+
+.show-code-inner-text {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 500px;
+    font-size: 24px;
+    color: #1D181A;
+}
+
+.show-code-div-icon{
+}
+
+.copy-svg {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+/* .copy-svg:hover {
+    color: ;
 } */
 
 /* .modal {

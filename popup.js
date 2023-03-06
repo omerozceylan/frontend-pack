@@ -28,9 +28,7 @@ infoButtons.forEach((item)=>{
         const div1 = this.parentElement
         const itemTitle = div1.querySelector('.items-title')
         nameToFind = itemTitle.innerHTML
-        console.log(nameToFind);
         findIndexFromArray(nameToFind)
-        
     })
 })
 
