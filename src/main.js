@@ -64,7 +64,7 @@ function updateTheCodeAndArray() {
 }
 
 function showCode(theNpmOut) {
-  showCodeDiv.value = theNpmOut;
+  showCodeDiv.innerHTML = theNpmOut;
   // theNpmOut.scroll(0,theNpmOut.scrollWidth)
 }
 
@@ -73,7 +73,10 @@ function changeVisibiltyOfCode(value) {
 }
 
 function copyToClickBoard() {
-  navigator.clipboard.writeText(theNpmOut.value);
+  // showCodeDiv.select()
+  // showCodeDiv.setSelectionRange(0, 99999)
+
+  navigator.clipboard.writeText(theNpmOut);
 }
 
 function removeAll() {
