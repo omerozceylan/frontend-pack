@@ -21,11 +21,13 @@ items.forEach(element => {
 })
 
 changeVisibiltyOfCode(0)
+let theNpmOut = ''
 let itemArray = []
 let theCode = ""
-let showCodeDiv = document.querySelector('.show-code-inner-text')
+const showCodeDiv = document.querySelector('.show-code-inner-text')
+const copyButton = document.querySelector('.copy-svg')
 
-// console.log(packages[16].key + 'main js...');
+copyButton.addEventListener('click',copyToClickBoard)
 
 function returnPackageKey(){
     const item = this.parentElement
@@ -71,7 +73,7 @@ function updateTheCodeAndArray(){
     if(theCode == "") changeVisibiltyOfCode(0)
     else{changeVisibiltyOfCode(1)}
 
-    let theNpmOut = `npm install${theCode}`
+    theNpmOut = `npm install${theCode}`
     console.log('npm code: ' + theNpmOut)
     showCode(theNpmOut)
 }
@@ -86,6 +88,10 @@ function changeVisibiltyOfCode(value){
     }else{
         containerOfCodeShowDiv.style.display = "none"
     }
+}
+
+function copyToClickBoard(){
+    navigator.clipboard.writeText(theNpmOut)
 }
 
 

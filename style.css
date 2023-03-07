@@ -278,6 +278,9 @@ section {
     background-color: #1d181a89;
 }
 
+.smooth-content {
+    scroll-behavior: smooth;
+}
 
 /* .copy-svg:hover {
     color: ;
