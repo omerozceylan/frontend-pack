@@ -343,7 +343,7 @@ packages.forEach((item)=> {
                 </div>
                 <div class="items-button-container">
                     <div class="items-title">${item.name}</div>
-                    <img src="public/info2.svg" class="items-info-button"/>
+                    <img src="info2.svg" class="items-info-button"/>
                 </div>
             </div>
   `
