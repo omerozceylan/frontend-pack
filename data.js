@@ -338,12 +338,12 @@ packages.forEach((item)=> {
             <div class="items">
                 <div class="select-section">
                  <div class="items-img">
-                      <img src="${item.imgUrl}" class="img">
+                      <img src=${item.imgUrl} class="img"/>
                   </div>
                 </div>
                 <div class="items-button-container">
                     <div class="items-title">${item.name}</div>
-                    <img src=".../src/info2.svg" class="items-info-button"></img>
+                    <img src="./src/info2.svg" class="items-info-button"/>
                 </div>
 
             </div>
