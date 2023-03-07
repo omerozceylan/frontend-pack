@@ -335,6 +335,10 @@ section {
         width: 250px;
     }
 
+    .show-code-div {
+        bottom: 30px;
+    }
+
     /* .show-code-div-inner{
         width: 200px;
     } */
@@ -363,5 +367,7 @@ section {
         height: 200px;
         width: 190px;
     }
+
+
 
 }
