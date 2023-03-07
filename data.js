@@ -337,7 +337,7 @@ packages.forEach((item)=> {
   let html = `
             <div class="items">
                 <div class="select-section">
-                 <div class="items-img">
+                 <div class="items-img ">
                       <img src="${item.imgUrl}" class="img">
                   </div>
                 </div>

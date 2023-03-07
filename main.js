@@ -74,7 +74,7 @@ function updateTheCodeAndArray(){
     else{changeVisibiltyOfCode(1)}
 
     theNpmOut = `npm install${theCode}`
-    console.log('npm code: ' + theNpmOut)
+ 
     showCode(theNpmOut)
 }
 

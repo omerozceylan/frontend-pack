@@ -80,11 +80,12 @@ section {
     color: #1D181A;
     margin: 13px;
     margin-bottom: 5px;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 
 .clicked {
     background-color: #9e9b96;
+    opacity: 0.5;
 }
 
 .items-img {
