@@ -36,10 +36,10 @@ button {
 }
 
 .info-button {
-    font-size: 30px;
     border-radius: 30px;
     padding: 5px 15px;
     cursor: pointer;
+    font-size: 34px;
 }
 
 .info-button:hover {
@@ -55,6 +55,7 @@ header {
     width: 100%;
     top: 0;
     background-color: #1D181A;
+    z-index: 100;
 }
 
 header .container {
@@ -111,22 +112,19 @@ section {
     font-size: 25px;
 }
 
+
+
 .items-info-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    width: 26px;
+    height: 26px;
     cursor: pointer;
-    width: 35px;
-    height: 30px;
+ 
     border-radius: 100px;
     transition: 0.2s;
     user-select: none;
-}
-
-.items-info-button:hover {
-    background-color: #1D181A;
-    color: #F0EDE2;
 }
 
 .items-info-button:active {
@@ -180,7 +178,7 @@ section {
     width: 480px;
     height: 300px;
     border: solid 3px black;
-    font-size: 18px;
+    font-size: 19px;
     color: black;
     display: flex;
     justify-content: center;

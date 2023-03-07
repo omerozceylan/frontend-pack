@@ -337,13 +337,13 @@ packages.forEach((item)=> {
   let html = `
             <div class="items">
                 <div class="select-section">
-                 <div class="items-img ">
+                 <div class="items-img">
                       <img src="${item.imgUrl}" class="img">
                   </div>
                 </div>
                 <div class="items-button-container">
                     <div class="items-title">${item.name}</div>
-                    <button class="items-info-button">i</button>
+                    <img src="./src/info2.svg" class="items-info-button"></img>
                 </div>
 
             </div>
