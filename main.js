@@ -79,7 +79,8 @@ function updateTheCodeAndArray(){
 }
 
 function showCode(theNpmOut){
-    showCodeDiv.innerHTML = theNpmOut
+    showCodeDiv.value = theNpmOut
+    theNpmOut.scroll(0,theNpmOut.scrollWidth)
 }
 
 function changeVisibiltyOfCode(value){
@@ -91,7 +92,7 @@ function changeVisibiltyOfCode(value){
 }
 
 function copyToClickBoard(){
-    navigator.clipboard.writeText(theNpmOut)
+    navigator.clipboard.writeText(theNpmOut.value)
 }
 
 
