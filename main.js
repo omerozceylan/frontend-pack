@@ -105,7 +105,7 @@ function deleteCodeFromShowing(){
     }
     updateTheCodeAndArray()
     updateItemsIfTheyAreRemoved()
-    console.log(itemArray);
+    
 
 }
 
