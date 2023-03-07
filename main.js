@@ -13,7 +13,10 @@ import { packages } from "./data"
 
 const items = document.querySelectorAll('.select-section')
 const containerOfCodeShowDiv = document.querySelector('.show-code-container')
-
+const deleteIcon = document.querySelector('.delete-svg')
+const showCodeDiv = document.querySelector('.show-code-inner-text')
+const copyButton = document.querySelector('.copy-svg')
+const cards = document.querySelectorAll('.items')
 
 items.forEach(element => {
     element.addEventListener('click', returnPackageKey)
@@ -24,10 +27,10 @@ changeVisibiltyOfCode(0)
 let theNpmOut = ''
 let itemArray = []
 let theCode = ""
-const showCodeDiv = document.querySelector('.show-code-inner-text')
-const copyButton = document.querySelector('.copy-svg')
 
 copyButton.addEventListener('click',copyToClickBoard)
+deleteIcon.addEventListener('click',deleteCodeFromShowing)
+
 
 function returnPackageKey(){
     const item = this.parentElement
@@ -80,7 +83,7 @@ function updateTheCodeAndArray(){
 
 function showCode(theNpmOut){
     showCodeDiv.value = theNpmOut
-    theNpmOut.scroll(0,theNpmOut.scrollWidth)
+    // theNpmOut.scroll(0,theNpmOut.scrollWidth)
 }
 
 function changeVisibiltyOfCode(value){
@@ -93,6 +96,25 @@ function changeVisibiltyOfCode(value){
 
 function copyToClickBoard(){
     navigator.clipboard.writeText(theNpmOut.value)
+}
+
+function deleteCodeFromShowing(){
+    theCode = ''
+    while(itemArray.length > 0){
+        itemArray.pop()
+    }
+    updateTheCodeAndArray()
+    updateItemsIfTheyAreRemoved()
+    console.log(itemArray);
+
+}
+
+function updateItemsIfTheyAreRemoved(){
+    cards.forEach((item)=>{
+        if(item.classList.contains('clicked')){
+            item.classList.remove('clicked')
+        }
+    })
 }
 
 

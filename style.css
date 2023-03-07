@@ -253,6 +253,7 @@ section {
     align-items: center;
     justify-content: space-around;
     flex-direction: row-reverse;
+    padding: 10px;
     width: 100%;
     height: 100%;
     color: #1D181A;
@@ -268,7 +269,7 @@ section {
     padding: 5px;
     white-space: nowrap;
     overflow: hidden;
-    width: 500px;
+    width: 460px;
     font-size: 24px;
     color: #1D181A;
     overflow-x: auto;
@@ -296,6 +297,16 @@ section {
     scroll-behavior: smooth;
 }
 
+.delete-svg {
+    cursor: pointer;
+    color: #1D181A;
+    width: 40px;
+    height: 40px;
+}
+
+.copy-svg:hover {
+    background-color: #9e9b9636;
+}
 /* .copy-svg:hover {
     color: ;
 } */
