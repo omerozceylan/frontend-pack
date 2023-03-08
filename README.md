@@ -1,11 +1,17 @@
 # frontend-pack
 
+## What Does Frontend-Pack?
+
+frontend-pack is a tool that allows you to generate npm code with just a click.
+
+
 Before we dive into my project, there's something you should know: this is the first time I am writing something at this level. My previous project was a calculator :)
 
 ![Screenshot_1](https://user-images.githubusercontent.com/42185275/223608612-c7e6d5e7-9153-464c-9997-e51abc006b91.jpg)
 
 And as you can see, I haven't used any React, jQuery, or similar tools in my project. It is entirely vanilla. And this will be the last project I write in vanilla.
 Or at least, i hope so!
+
 
 ## Let me tell you about how my project works and the logic behind it:
 
