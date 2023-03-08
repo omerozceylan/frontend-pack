@@ -271,11 +271,12 @@ section {
     width: 460px;
     font-size: 24px;
     color: #1D181A;
-    overflow-x: auto;
-    scrollbar-width: none;
+
     scroll-behavior: smooth;
-    scroll-snap-type: mandatory;
+   
 }
+
+
 
 .copy-svg {
     cursor: pointer;
