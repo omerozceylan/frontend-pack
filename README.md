@@ -20,7 +20,7 @@ Or at least, i hope so!
 ### Firstly, all the objects are printed to HTML from data.js file, as usual.
 
 
-```
+```js
 //Print to html all items in obj
 packages.forEach((item) => {
   let html = `
@@ -44,7 +44,7 @@ packages.forEach((item) => {
 
 ### I am listening for the click event on the 'img' section of all the cards, and obtaining the index of the object that corresponds to the card's title. From this index, I retrieve the value from the 'key' attribute and add it to our code.
 
-```
+```js
 function returnPackageKey() {
   const item = this.parentElement; // The 'item' variable refers to the card itself.
   changeColorCard(item); // The color-changing function is called when a card is selected.
@@ -61,7 +61,7 @@ function returnPackageKey() {
 
  If there is something there, remove it; otherwise, add it. Everything is done with a single click.
 
-```
+```js
 function createNpmCode(value) {
   if (packages.includes(value)) {
     const i = packages.indexOf(value);
@@ -81,7 +81,7 @@ Whenever there is an addition or removal operation, this function retrieves the 
 
 
 
-```
+```js
 function updateTheCodeAndArray() {
   commandText = packages.join(" ");
 
@@ -107,7 +107,7 @@ These functions are called when the 'delete' button in the code display section 
 
 The purpose of the removeSelectedItems() function is to clear the selection effect on the cards whose codes have been deleted, to keep things tidy.
 
-```
+```js
 function removeAll() {
   commandText = "";
   packages = [];
