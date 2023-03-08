@@ -15,6 +15,7 @@ changeVisibiltyOfCode(0);
 let theNpmOut = "";
 let packages = [];
 let commandText = "";
+let tooltip = document.getElementById("myTooltip");
 
 copyButton.addEventListener("click", copyToClickBoard);
 deleteIcon.addEventListener("click", removeAll);
@@ -46,6 +47,7 @@ function createNpmCode(value) {
   } else {
     packages.push(value);
   }
+  tooltip.innerHTML = "Copy to clipboard"
   updateTheCodeAndArray();
 }
 
@@ -77,6 +79,7 @@ function copyToClickBoard() {
   // showCodeDiv.setSelectionRange(0, 99999)
 
   navigator.clipboard.writeText(theNpmOut);
+  tooltip.innerHTML = "Copied!"
 }
 
 function removeAll() {
