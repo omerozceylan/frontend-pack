@@ -51,6 +51,8 @@ function returnPackageKey() {
 
 ### createNpmCode() does this;
 
+ If there is something there, remove it; otherwise, add it. Everything is done with a single click.
+
 ```
 function createNpmCode(value) {
   if (packages.includes(value)) {
@@ -58,7 +60,7 @@ function createNpmCode(value) {
     packages.splice(i, 1);
   } else {
     packages.push(value);
-  }   // If there is something there, remove it; otherwise, add it. Everything is done with a single click.
+  } 
   updateTheCodeAndArray();
 }
 
@@ -104,7 +106,7 @@ function removeAll() {
   removeSelectedItems();
 }
 
-function removeSelectedItems() { // The purpose of the removeSelectedItems() function is to clear the selection effect on the cards whose codes have been deleted, to                                       keep things tidy.
+function removeSelectedItems() { // The purpose of the removeSelectedItems() function is to clear the selection effect on the cards whose codes have been deleted, to keep things tidy.
   cards.forEach((item) => {
     if (item.classList.contains("clicked")) {
       item.classList.remove("clicked");
