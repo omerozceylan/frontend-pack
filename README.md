@@ -11,6 +11,7 @@ Or at least, i hope so!
 
 ### Firstly, all the objects are printed to HTML from data.js file, as usual.
 
+
 ```
 //Print to html all items in obj
 packages.forEach((item) => {
@@ -31,6 +32,8 @@ packages.forEach((item) => {
 });
 
 ```
+
+
 ### I am listening for the click event on the 'img' section of all the cards, and obtaining the index of the object that corresponds to the card's title. From this index, I retrieve the value from the 'key' attribute and add it to our code.
 
 ```
@@ -44,6 +47,8 @@ function returnPackageKey() {
 }
 
 ```
+
+
 ### createNpmCode() does this;
 
 ```
@@ -58,9 +63,13 @@ function createNpmCode(value) {
 }
 
 ```
+
+
 ### What does updateTheCodeAndArray() do?
 
 Whenever there is an addition or removal operation, this function retrieves the corresponding code snippets from the array and uses them to regenerate the output, which is the 'commandText'.
+
+
 
 ```
 function updateTheCodeAndArray() {
@@ -79,10 +88,13 @@ function updateTheCodeAndArray() {
 ```
 And I forgot to mention: if the code is empty when a change is made, the place where the code is displayed is hidden.
 
+
+
 ### removeAll() and removeSelectedItems()
 These functions are called when the 'delete' button in the code display section is clicked
 
 ![Screenshot_2](https://user-images.githubusercontent.com/42185275/223615066-4514a867-d7fc-4851-ad62-b3fdeceddace.jpg)
+
 
 ```
 function removeAll() {
@@ -101,6 +113,7 @@ function removeSelectedItems() { // The purpose of the removeSelectedItems() fun
 }
 
 ```
+
 
 I wanted to explain the code and logic I've implemented here. I've provided a summary, but if you want to understand it more thoroughly, you can take a look at the code.
 
