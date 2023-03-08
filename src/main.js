@@ -50,7 +50,6 @@ function createNpmCode(value) {
 }
 
 function updateTheCodeAndArray() {
-  //commandText value reset everytime. That's because it have to be not reprinting every time
   commandText = packages.join(" ");
 
   //if there is a no code in "commandText" variable, code showing container will be gone
@@ -65,6 +64,7 @@ function updateTheCodeAndArray() {
 
 function showCode(theNpmOut) {
   showCodeDiv.innerHTML = theNpmOut;
+  showCodeDiv.scroll(showCodeDiv.scrollWidth,0)
   // theNpmOut.scroll(0,theNpmOut.scrollWidth)
 }
 
