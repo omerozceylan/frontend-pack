@@ -276,6 +276,15 @@ section {
     
 }
 
+.github-icon {
+    color: #fff;
+    border: solid black 2px;
+
+    width: 45px;
+    background-color: #F0EDE2;
+    border-radius: 500px;
+}
+
 .show {
     opacity: 1;
     transform: translateY(0%);
