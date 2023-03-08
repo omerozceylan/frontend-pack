@@ -1,9 +1,9 @@
 import { packages as packagesData } from "./data";
 
 const items = document.querySelectorAll(".select-section");
-const containerOfCodeShowDiv = document.querySelector(".show-code-container");
 const deleteIcon = document.querySelector(".delete-svg");
 const showCodeDiv = document.querySelector(".show-code-inner-text");
+const showCodeSection = document.querySelector('.show-code-div')
 const copyButton = document.querySelector(".copy-svg");
 const cards = document.querySelectorAll(".items");
 
@@ -67,11 +67,25 @@ function updateTheCodeAndArray() {
 function showCode(theNpmOut) {
   showCodeDiv.innerHTML = theNpmOut;
   showCodeDiv.scroll(showCodeDiv.scrollWidth,0)
-  // theNpmOut.scroll(0,theNpmOut.scrollWidth)
+
 }
 
 function changeVisibiltyOfCode(value) {
-  containerOfCodeShowDiv.style.display = value == 1 ? "flex" : "none";
+    if(value==1){
+      if(showCodeSection.classList.contains('hidden')){
+        showCodeSection.classList.remove('hidden')
+        showCodeSection.classList.add('show')
+      }else{
+        showCodeSection.classList.add('show')
+      }
+    }else{
+      if(showCodeSection.classList.contains('show')){
+        showCodeSection.classList.remove('show')
+        showCodeSection.classList.add('hidden')
+      }else{
+        showCodeSection.classList.add('hidden')
+      }
+    }
 }
 
 function copyToClickBoard() {

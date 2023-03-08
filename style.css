@@ -224,12 +224,32 @@ section {
 }
 
 .show-code-container {
-    display: none;
+    display: flex;
     justify-content: center;
     height: 200px;
     width: 100%;
     background-color: #1D181A;
     
+}
+
+@keyframes bottomToTop {
+    from {
+        transform: translateY(300px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes topToBottom {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(500px);
+    }
 }
 
 .show-code-div {
@@ -243,8 +263,23 @@ section {
     height: 100px;
     background-color: #609966;
     box-shadow: -1px 1px 30px 7px rgba(0,0,0,0.71);
--webkit-box-shadow: -1px 1px 30px 7px rgba(0,0,0,0.71);
--moz-box-shadow: -1px 1px 30px 7px rgba(0,0,0,0.71);
+    -webkit-box-shadow: -1px 1px 30px 7px rgba(0,0,0,0.71);
+    -moz-box-shadow: -1px 1px 30px 7px rgba(0,0,0,0.71);
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+
+.hidden {
+    animation-name:topToBottom ;
+    
+    
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0%);
+    animation-name: bottomToTop;
 }
 
 .show-code-div-inner{
@@ -345,10 +380,15 @@ section {
     border-color: #555 transparent transparent transparent;
 }
   
-  .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-  }
+}
+
+
+
+
+
 
 
 /* .copy-svg:hover {
