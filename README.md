@@ -97,6 +97,7 @@ These functions are called when the 'delete' button in the code display section 
 
 ![Screenshot_2](https://user-images.githubusercontent.com/42185275/223615066-4514a867-d7fc-4851-ad62-b3fdeceddace.jpg)
 
+The purpose of the removeSelectedItems() function is to clear the selection effect on the cards whose codes have been deleted, to keep things tidy.
 
 ```
 function removeAll() {
@@ -106,7 +107,7 @@ function removeAll() {
   removeSelectedItems();
 }
 
-function removeSelectedItems() { // The purpose of the removeSelectedItems() function is to clear the selection effect on the cards whose codes have been deleted, to keep things tidy.
+function removeSelectedItems() { 
   cards.forEach((item) => {
     if (item.classList.contains("clicked")) {
       item.classList.remove("clicked");
