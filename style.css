@@ -390,7 +390,10 @@ section {
     opacity: 1;
 }
 
-
+.top-message {
+    font-size: 18px;
+    margin-bottom:30px
+}
 
 
 
