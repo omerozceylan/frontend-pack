@@ -395,9 +395,18 @@ section {
     margin-bottom:30px
 }
 
+.top-message-message {
+    transition: 0.3s;
+}
 
+.top-message-message:hover {
+    background-color: #F0EDE2;
+    color: #1D181A;
+}
 
-
+.top-message-message:active {
+    background-color: #817f79;
+}
 
 /* .copy-svg:hover {
     color: ;
