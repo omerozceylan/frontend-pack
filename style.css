@@ -461,6 +461,18 @@ section {
     } */
 }
 
+@media (max-width:550px){
+    header .container {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px;
+    }
+
+    .content-top {
+        height: 90px;
+    }
+}
+
 @media (max-width:350px){
     .select-section{
         display: none;
