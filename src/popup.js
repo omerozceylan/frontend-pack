@@ -1,20 +1,18 @@
 import { packages } from "./data.js";
-// import { languageUserSelect } from "./main.js";
 
 const infoButton = document.querySelectorAll(".items-info-button");
 const popUp = document.querySelector(".modal");
 const popUpCloseButton = document.querySelector(".pop-up-button");
 const popUpInner = document.querySelector(".pop-up-info");
 const selectLanguage = document.querySelector('#language-select')
-
-let languageUserSelect = ''
+const topMessage1 = document.querySelector('.top-message')
 
 selectLanguage.addEventListener('click', getSelectedLanguage)
 
 function getSelectedLanguage(){
    let index = selectLanguage.selectedIndex
    let selectedLanguage = selectLanguage.options[index].innerHTML
-   console.log(selectedLanguage);
+   changeTextsByLanguage(selectedLanguage)
    return selectedLanguage
 }
 
@@ -61,4 +59,15 @@ function reWritePopUp(selectedPackageTitle) {
   const index = findIndexFromArray(selectedPackageTitle)
   const popUpInfo = returnObjectInfo(index,languageSelectedByUser);
   popUpInner.innerHTML = popUpInfo;
+}
+
+
+function changeTextsByLanguage(language='Tr'){
+  if(language=='Tr'){
+    topMessage1.innerHTML = `<a href="https://github.com/omerozceylan/frontend-pack#readme" target="_blank" class="top-message-message">Frontend-Pack</a> nedir? `
+    popUpCloseButton.innerHTML= 'tamam'
+  }else {
+    topMessage1.innerHTML = `What is <a href="https://github.com/omerozceylan/frontend-pack#readme" target="_blank" class="top-message-message">Frontend-Pack?</a>`  
+    popUpCloseButton.innerHTML = 'ok'
+  }
 }
