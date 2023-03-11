@@ -1,9 +1,22 @@
 import { packages } from "./data.js";
+// import { languageUserSelect } from "./main.js";
 
 const infoButton = document.querySelectorAll(".items-info-button");
 const popUp = document.querySelector(".modal");
 const popUpCloseButton = document.querySelector(".pop-up-button");
 const popUpInner = document.querySelector(".pop-up-info");
+const selectLanguage = document.querySelector('#language-select')
+
+let languageUserSelect = ''
+
+selectLanguage.addEventListener('click', getSelectedLanguage)
+
+function getSelectedLanguage(){
+   let index = selectLanguage.selectedIndex
+   let selectedLanguage = selectLanguage.options[index].innerHTML
+   console.log(selectedLanguage);
+   return selectedLanguage
+}
 
 infoButton.forEach((item) => {
   item.addEventListener("click", () => {
@@ -23,7 +36,7 @@ infoButtons.forEach((item) => {
     const div1 = this.parentElement;
     const itemTitle = div1.querySelector(".items-title");
     nameToFind = itemTitle.innerHTML;
-    findIndexFromArray(nameToFind);
+    reWritePopUp(nameToFind)
   });
 });
 
@@ -31,15 +44,21 @@ function findIndexFromArray(nameToFind) {
   let index = packages.findIndex(function (product) {
     return product.name === nameToFind;
   });
-  const popUpInfo = returnObjectInfo(index);
-  reWritePopUp(popUpInfo);
+  return index
 }
 
-function returnObjectInfo(index) {
+function returnObjectInfo(index, language) {
   const object = packages[index];
-  return object.info;
+  if(language == 'Tr'){
+    return object.info;
+  }else{
+    return object.enInfo;
+  }
 }
 
-function reWritePopUp(text = "hata: bilgi bulunamadı") {
-  popUpInner.innerHTML = text;
+function reWritePopUp(selectedPackageTitle) {
+  const languageSelectedByUser = getSelectedLanguage()
+  const index = findIndexFromArray(selectedPackageTitle)
+  const popUpInfo = returnObjectInfo(index,languageSelectedByUser);
+  popUpInner.innerHTML = popUpInfo;
 }

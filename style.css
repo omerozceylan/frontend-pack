@@ -408,6 +408,27 @@ section {
     background-color: #817f79;
 }
 
+.header-link-section  {
+    display: flex;
+    width: 240px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.language-label {
+    font-size: 22px;
+}
+
+#language-select {
+    color: #1D181A;
+    font-size: 20px;
+    outline: 0;
+}
+
+.option {
+    color: #1D181A;
+}
+
 /* .copy-svg:hover {
     color: ;
 } */

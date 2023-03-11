@@ -7,6 +7,9 @@ const showCodeSection = document.querySelector('.show-code-div')
 const copyButton = document.querySelector(".copy-svg");
 const cards = document.querySelectorAll(".items");
 
+
+
+
 items.forEach((element) => {
   element.addEventListener("click", returnPackageKey);
 });
@@ -31,6 +34,7 @@ function returnPackageKey() {
 
 function changeColorCard(item) {
   item.classList.toggle("clicked");
+  console.log('clicked');
 }
 
 function getProductIndexByName(nameToFind) {
@@ -110,3 +114,4 @@ function removeSelectedItems() {
     }
   });
 }
+
