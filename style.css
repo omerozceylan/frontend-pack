@@ -429,6 +429,14 @@ section {
     color: #1D181A;
 }
 
+.hamburger {
+    display: none;
+    
+    background-color: #555;
+    width: 40px;
+    
+}
+
 /* .copy-svg:hover {
     color: ;
 } */
@@ -471,21 +479,30 @@ section {
     .content-top {
         height: 90px;
     }
+
+    .hamburger {
+        display: flex;
+    }
+    
 }
 
 @media (max-width:350px){
-    .select-section{
-        display: none;
-    }
-
-    .items {
-        height: 70px;
+    
+    .items-img {
+        margin-top: 10px;
         width: 200px;
+        height: 120px;
+        border: solid 2px black;
     }
 
-    .show-code-div {
-        width: 260px;
+   .items {
+        height: 180px;
+        width: 230px;
     }
+
+    /* .show-code-div {
+        width: 260px;
+    } */ 
 
     .pop-up-inside {
         width: 230px;
