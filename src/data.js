@@ -2,7 +2,7 @@ const packages = [
   {
     name: "React",
     imgUrl:
-      "https://pbs.twimg.com/card_img/1627660850495639552/2p5-fl2O?format=png&name=medium",
+      "https://itsg-global.com/wp-content/uploads/2016/09/react-js-to-use-or-not-to-use.png",
     key: "react",
     enInfo:'A JavaScript library developed by Facebook is used particularly for creating web interfaces.',
     info: "Facebook tarafından geliştirilen bir JavaScript kütüphanesi, özellikle web arayüzleri oluşturmak için kullanılır.",
