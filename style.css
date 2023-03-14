@@ -548,12 +548,17 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        background-color: #1D181A;
+        z-index: 1;
     }
 
     .hamburger-svg {
         display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #1D181A;
+        height: 75px;
+        padding-top:14px ;
     }
        
     .hamburger {
@@ -571,7 +576,7 @@ section {
         justify-content: space-around;
         align-items: center;
         background-color: #1D181A;
-        z-index: -1;
+        z-index: -99;
     }
 
     .hamburger-icon {
