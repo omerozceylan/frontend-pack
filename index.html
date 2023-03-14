@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend-Pack</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="content-top"></div>
     <header>
-        <div class="container">
-            <h1>Frontend-Pack</h1>
-            <div class="header-link-section">
-                <div class="language-select">
-                    <label class="language-label" for="Languages">Language</label>
-                    <select name="Languages" id="language-select">
-                        <option class="option" value="En">En</option>
-                        <option class="option" value="Tr">Tr</option>
-                    </select>
-                </div>
-                <a target="_blank" href="https://github.com/omerozceylan/frontend-pack">
-                    <img class="github-icon"  src="public/github-mark-white.svg" alt="">
-                </a>
-                <!-- <div class="hamburger-icon">
-                    <img src="public/hamburger.svg" class="hamburger" alt="">
-                </div> -->
-            </div>
-           
+      <div class="header-container">
+        <div class="header-title">
+          <h1>Frontend-Pack</h1>
         </div>
+
+        <input
+          name="hamburger-toggle"
+          type="checkbox"
+          class="hamburger-icon"
+          id="hamburger-toggle"
+        />
+        <label for="hamburger-toggle" class="hamburger">
+          <svg
+            class="hamburger-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+          >
+            <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+          </svg>
+        </label>
+
+        <div class="open-menu">
+          <div class="language-select">
+            <label class="language-label" for="Languages">Language</label>
+            <select name="Languages" id="language-select">
+              <option class="option" value="En">En</option>
+              <option class="option" value="Tr">Tr</option>
+            </select>
+          </div>
+          <a
+            class="github-link"
+            target="_blank"
+            href="https://github.com/omerozceylan/frontend-pack"
+          >
+            <img
+              class="github-icon"
+              src="public/github-mark-white.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
     </header>
     <section class="content">
-        <div class="container">
-            <div class="top-message">
-                What is <a href="https://github.com/omerozceylan/frontend-pack#readme" target="_blank" class="top-message-message">Frontend-Pack?</a> 
-            </div>
-            <div class="items-container">
-
-            </div>
-            <!-- <div class="items">
+      <div class="content-container">
+        <div class="top-message">
+          What is
+          <a
+            href="https://github.com/omerozceylan/frontend-pack#readme"
+            target="_blank"
+            class="top-message-message"
+            >Frontend-Pack?</a
+          >
+        </div>
+        <div class="items-container"></div>
+        <!-- <div class="items">
                 <div class="items-img">
                     <img src="https://smartstore.com/media/4771/content/Bootstrap_Logo_2000x615.jpg" class="img">
                 </div>
@@ -48,47 +75,39 @@
                 </div>
 
             </div> -->
-        </div>   
-        
-        </section>
-       
- 
-        <!-- position: fixed elements can go outside --->
-      
-    
+      </div>
+    </section>
+
+    <!-- position: fixed elements can go outside --->
 
     <dialog id="modal" class="modal pop-up">
-        <div class="pop-up-inside">
-
-            <div class="pop-up-info">
-                
-            </div>
-            <div open class="pop-up-button-section">
-                <div></div>
-                <button class="pop-up-button">tamam</button>
-            </div>
+      <div class="pop-up-inside">
+        <div class="pop-up-info"></div>
+        <div open class="pop-up-button-section">
+          <div></div>
+          <button class="pop-up-button">tamam</button>
         </div>
+      </div>
     </dialog>
     <div class="show-code-container">
-        <div class="show-code-div">
-            <div class="show-code-div-inner">
-                <div class="tooltip">
-                    <div class="show-code-div-icon">
-                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                        <img src="copy.svg" class="copy-svg" alt="">
-                    </div>
-                </div>
-                <div class="show-code-div-icon">
-                    <img src="delete.svg" class="delete-svg">
-                </div>
-                <div class="show-code-inner-text"></div>
-               
+      <div class="show-code-div">
+        <div class="show-code-div-inner">
+          <div class="tooltip">
+            <div class="show-code-div-icon">
+              <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+              <img src="copy.svg" class="copy-svg" alt="" />
             </div>
+          </div>
+          <div class="show-code-div-icon">
+            <img src="delete.svg" class="delete-svg" />
+          </div>
+          <div class="show-code-inner-text"></div>
         </div>
+      </div>
     </div>
-    
+
     <script type="module" src="./src/data.js"></script>
     <script type="module" src="./src/popup.js"></script>
     <script type="module" src="./src/main.js"></script>
-</body>
+  </body>
 </html>
