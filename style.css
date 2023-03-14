@@ -477,7 +477,7 @@ section {
 
 .open-menu {
     display: flex;
-    width: 240px;
+    width: 300px;
     justify-content: space-around;
     align-items: center;
     z-index: -1;
@@ -567,6 +567,7 @@ section {
         transition: 0.2s all ease-in-out;
         display: flex;
         height: 100px;
+    
         justify-content: space-around;
         align-items: center;
         background-color: #1D181A;
