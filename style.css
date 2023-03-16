@@ -86,8 +86,8 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 23vh;
-    height: 18vh;
+    width: 270px;
+    height: 200px;
     background-color: #F0EDE2;
     color: #1D181A;
     margin: 13px;
@@ -102,8 +102,8 @@ section {
 
 .items-img {
     margin-top: 10px;
-    width: 21vh;
-    height: 12vh;
+    width: 260px;
+    height: 140px;
     border: solid 2px black;
 }
 
