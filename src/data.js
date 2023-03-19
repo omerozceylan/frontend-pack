@@ -6,7 +6,6 @@ const packages = [
     key: "react",
     enInfo:'A JavaScript library developed by Facebook is used particularly for creating web interfaces.',
     info: "Facebook tarafından geliştirilen bir JavaScript kütüphanesi, özellikle web arayüzleri oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "Vue.js",
@@ -15,7 +14,6 @@ const packages = [
     key: "vue",
     enInfo:'A JavaScript framework is used specifically for creating web interfaces.',
     info: "Bir JavaScript framework'ü, özellikle web arayüzleri oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "Angular",
@@ -24,7 +22,6 @@ const packages = [
     key: "@angular/core",
     enInfo:'A JavaScript framework developed by Google is used particularly for creating large and complex applications.',
     info: "Google tarafından geliştirilen bir JavaScript framework'ü, özellikle büyük ve karmaşık uygulamalar oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "Bootstrap",
@@ -33,7 +30,6 @@ const packages = [
     key: "bootstrap",
     enInfo:'"A CSS framework developed by Twitter is used particularly for creating mobile-responsive websites.',
     info: "Twitter tarafından geliştirilen bir CSS framework'ü, özellikle mobil uyumlu web siteleri oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "material ui",
@@ -42,7 +38,6 @@ const packages = [
     key: "@material-ui/core",
     enInfo:"A collection of React components based on Google's Material Design concept.",
     info: "Google'ın Material Design konseptine dayalı React bileşenleri koleksiyonu.",
-    isClicked: false,
   },
   {
     name: "tailwind css",
@@ -50,7 +45,6 @@ const packages = [
     key: "tailwindcss",
     enInfo:"A CSS utility framework is used to create easily customizable components quickly.",
     info: "CSS utility framework'ü, hızlı bir şekilde özelleştirilebilir bileşenler oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "next.js",
@@ -59,7 +53,6 @@ const packages = [
     key: "next",
     enInfo:"A web framework based on React is used particularly for creating SEO-friendly and fast websites.",
     info: "React tabanlı bir web framework'ü, özellikle SEO dostu ve hızlı web siteleri oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "gatsby",
@@ -68,7 +61,6 @@ const packages = [
     key: "gatsby",
     enInfo:'A web framework based on React is used particularly for creating static websites.',
     info: "React tabanlı bir web framework'ü, özellikle statik web siteleri oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "jquery",
@@ -77,7 +69,6 @@ const packages = [
     key: "jquery",
     enInfo:"A JavaScript library used to manipulate elements in an HTML document and create interactive components.",
     info: "HTML belgesindeki elementleri manipüle etmek ve etkileşimli öğeler oluşturmak için kullanılan bir JavaScript kütüphanesi.",
-    isClicked: false,
   },
   {
     name: "lodash",
@@ -85,7 +76,6 @@ const packages = [
     key: "lodash",
     enInfo:"A JavaScript library that simplifies operations on arrays, strings, objects, etc.",
     info: "JavaScript kütüphanesi, dizi, string, nesne vb. işlemleri yapmayı kolaylaştırır.",
-    isClicked: false,
   },
   {
     name: "redux",
@@ -93,7 +83,6 @@ const packages = [
     key: "redux",
     enInfo:"A state management library for JavaScript applications.",
     info: "JavaScript uygulamaları için bir state yönetim kütüphanesi.",
-    isClicked: false,
   },
   {
     name: "sass",
@@ -101,7 +90,6 @@ const packages = [
     key: "sass",
     enInfo:"A CSS preprocessor that enables creating more readable and manageable CSS code.",
     info: "CSS preprocessor'ü, daha okunaklı ve yönetilebilir CSS kodları oluşturmayı sağlar.",
-    isClicked: false,
   },
   {
     name: "styled-components",
@@ -110,7 +98,6 @@ const packages = [
     key: "styled-components",
     enInfo:"A CSS-in-JS library that combines the styles of components with content.",
     info: "CSS-in-JS kütüphanesi, bileşenlerin stillerini içerikle birleştirir.",
-    isClicked: false,
   },
   {
     name: "webpack",
@@ -119,7 +106,6 @@ const packages = [
     key: "webpack",
     enInfo:"A tool used to combine, compress, and manage JavaScript files.",
     info: "JavaScript dosyalarını birleştirmek, sıkıştırmak ve yönetmek için kullanılan bir araç.",
-    isClicked: false,
   },
   {
     name: "babel",
@@ -128,7 +114,6 @@ const packages = [
     key: "@babel/core",
     enInfo:"A transpiler used to make JavaScript code compatible with older browsers.",
     info: "JavaScript kodunu eski tarayıcılar için uyumlu hale getirmek için kullanılan bir transpiler.",
-    isClicked: false,
   },
   {
     name: "eslint",
@@ -137,7 +122,6 @@ const packages = [
     key: "eslint",
     enInfo:"A tool used to analyze JavaScript code and find style and error mistakes.",
     info: "JavaScript kodunu analiz ederek stil ve hata hatalarını bulmaya yarayan bir araç.",
-    isClicked: false,
   },
   {
     name: "prettier",
@@ -146,7 +130,6 @@ const packages = [
     key: "prettier",
     enInfo:"A tool that automatically formats JavaScript code.",
     info: "JavaScript kodunu otomatik olarak biçimlendiren bir araç.",
-    isClicked: false,
   },
   {
     name: "axios",
@@ -154,7 +137,6 @@ const packages = [
     key: "axios",
     enInfo:"A library used to send HTTP requests for JavaScript applications.",
     info: "JavaScript uygulamaları için HTTP istekleri göndermek için kullanılan bir kütüphane.",
-    isClicked: false,
   },
   {
     name: "react native",
@@ -163,7 +145,6 @@ const packages = [
     key: "react-native",
     enInfo:"A React-based framework for developing mobile applications.",
     info: "React tabanlı mobil uygulama geliştirme framework'ü.",
-    isClicked: false,
   },
   {
     name: "ionic",
@@ -171,7 +152,6 @@ const packages = [
     key: "@ionic/core",
     enInfo:"A mobile application development framework used to create mobile applications using Angular or React.",
     info: "Mobile uygulama geliştirme framework'ü, Angular veya React kullanarak mobil uygulamalar oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "chart.js",
@@ -179,7 +159,6 @@ const packages = [
     key: "chart.js",
     enInfo:"A JavaScript library used for graphics and data visualization.",
     info: "Grafik ve veri görselleştirmesi için kullanılan bir JavaScript kütüphanesi.",
-    isClicked: false,
   },
   {
     name: "d3.js",
@@ -187,7 +166,6 @@ const packages = [
     key: "d3",
     enInfo:"A JavaScript library used for graphics and data visualization.",
     info: "Grafik ve veri görselleştirme için kullanılan bir JavaScript kütüphanesi.",
-    isClicked: false,
   },
   {
     name: "three.js",
@@ -195,7 +173,6 @@ const packages = [
     key: "three",
     enInfo:"A JavaScript library used to create 3D graphics using WebGL technology.",
     info: "WebGL teknolojisi kullanarak 3D grafikler oluşturmak için kullanılan bir JavaScript kütüphanesi.",
-    isClicked: false,
   },
   {
     name: "socket.io",
@@ -204,7 +181,6 @@ const packages = [
     key: "socket.io",
     enInfo:'A JavaScript library used to establish real-time communication using WebSocket technology',
     info: "Websocket teknolojisi kullanarak gerçek zamanlı iletişim kurmak için kullanılan bir JavaScript kütüphanesi.",
-    isClicked: false,
   },
   {
     name: "express",
@@ -212,7 +188,6 @@ const packages = [
     key: "express",
     enInfo:'',
     info: "Node.js tabanlı bir web uygulama framework'ü.",
-    isClicked: false,
   },
   {
     name: "koa",
@@ -220,7 +195,6 @@ const packages = [
     key: "koa",
     enInfo:'A web application framework based on Node.js.',
     info: "Node.js tabanlı bir web uygulama framework'ü.",
-    isClicked: false,
   },
   {
     name: "passport",
@@ -229,7 +203,6 @@ const packages = [
     key: "passport",
     enInfo:"A library used for user authentication and authorization in Node.js applications.",
     info: "Node.js uygulamaları için kullanıcı kimlik doğrulama ve yetkilendirme için kullanılan bir kütüphane.",
-    isClicked: false,
   },
   {
     name: "firebase",
@@ -237,7 +210,6 @@ const packages = [
     key: "firebase",
     enInfo:'A cloud-based service provided by Google, used especially for mobile and web applications.',
     info: "Google tarafından sağlanan bir bulut tabanlı hizmet, özellikle mobil ve web uygulamaları için kullanılır.",
-    isClicked: false,
   },
   {
     name: "aws sdk",
@@ -245,7 +217,6 @@ const packages = [
     key: "aws-sdk",
     enInfo:'A JavaScript library for building user interfaces, especially for creating web interfaces.',
     info: "Amazon Web Services (AWS) için bir JavaScript kütüphanesi, bulut tabanlı uygulamalar oluşturmak için kullanılır.",
-    isClicked: false,
   },
   {
     name: "jest",
@@ -253,7 +224,6 @@ const packages = [
     key: "jest",
     enInfo:'A test framework for JavaScript applications.',
     info: "JavaScript uygulamaları için test framework'ü.",
-    isClicked: false,
   },
   {
     name: "mocha",
@@ -261,7 +231,6 @@ const packages = [
     key: "mocha",
     enInfo:'A test framework for JavaScript applications.',
     info: "JavaScript uygulamaları için test framework'ü.",
-    isClicked: false,
   },
   {
     name: "chai",
@@ -269,7 +238,6 @@ const packages = [
     key: "chai",
     enInfo:'A test writing library for JavaScript applications.',
     info: "JavaScript uygulamaları için bir test yazma kütüphanesi.",
-    isClicked: false,
   },
   {
     name: "cypress",
@@ -277,7 +245,6 @@ const packages = [
     key: "cypress",
     enInfo:'A JavaScript library used for running end-to-end tests.',
     info: "End-to-end testleri çalıştırmak için kullanılan bir JavaScript kütüphanesi.",
-    isClicked: false,
   },
   {
     name: "puppeteer",
@@ -285,7 +252,6 @@ const packages = [
     key: "puppeteer",
     enInfo:'A library used to automate Chromium-based browsers.',
     info: "Chromium tabanlı tarayıcıları otomatikleştirmek için kullanılan bir kütüphane.",
-    isClicked: false,
   },
   {
     name: "storybook",
@@ -294,7 +260,6 @@ const packages = [
     key: "storybook",
     enInfo:'An UI development environment for React components.',
     info: "React bileşenleri için bir UI geliştirme ortamı.",
-    isClicked: false,
   },
   {
     name: "figma-api",
@@ -303,7 +268,6 @@ const packages = [
     key: "figma-api",
     enInfo:"An API used for interacting with design tools.",
     info: "Tasarım araçlarıyla etkileşim kurmak için kullanılan bir API.",
-    isClicked: false,
   },
   {
     name: "google-maps-api",
@@ -312,7 +276,6 @@ const packages = [
     key: "google-maps-api",
     enInfo:"An API used to access Google Maps features.",
     info: "Google Haritalar özelliklerine erişmek için kullanılan bir API.",
-    isClicked: false,
   },
   {
     name: "stripe-api",
@@ -320,7 +283,6 @@ const packages = [
     key: "stripe-api",
     enInfo:"An API used for online payment transactions.",
     info: "Online ödeme işlemleri için kullanılan bir API.",
-    isClicked: false,
   },
   {
     name: "twilio-api",
@@ -328,7 +290,6 @@ const packages = [
     key: "twilio-api",
     enInfo:"A JavaScript API used for SMS, voice, and video communication.",
     info: "SMS, ses ve video iletişimleri için kullanılan bir API.",
-    isClicked: false,
   },
   {
     name: "sendgrid-api",
@@ -337,7 +298,6 @@ const packages = [
     key: "sendgrid-api",
     enInfo:"An API used for sending emails.",
     info: "E-posta göndermek için kullanılan bir API.",
-    isClicked: false,
   },
   {
     name: "nodemailer",
@@ -346,7 +306,6 @@ const packages = [
     key: "nodemailer",
     enInfo:"A library used to send emails for Node.js applications.",
     info: "Node.js uygulamaları için e-posta göndermek için kullanılan bir kütüphane.",
-    isClicked: false,
   },
   {
     name: "moment.js",
@@ -355,7 +314,6 @@ const packages = [
     key: "moment.js",
     enInfo:"A JavaScript library used to work with dates and times.",
     info: "JavaScript'te tarih ve saatlerle çalışmak için kullanılan bir kütüphane.",
-    isClicked: false,
   },
   {
     name: "react-router",
@@ -363,7 +321,6 @@ const packages = [
     key: "react-router",
     enInfo:"A library used for routing in React applications.",
     info: "React uygulamalarında yönlendirme yapmak için kullanılan bir kütüphane.",
-    isClicked: false,
   },
   {
     name: "formik",
@@ -371,7 +328,6 @@ const packages = [
     key: "formik",
     enInfo:"A library used for handling form operations in React applications.",
     info: "React uygulamalarında form işlemleri yapmak için kullanılan bir kütüphane.",
-    isClicked: false,
   },
   {
     name: "yup",
@@ -379,7 +335,6 @@ const packages = [
     key: "yup",
     enInfo:"A JavaScript library used for data validation in JavaScript applications.",
     info: "JavaScript uygulamalarında veri doğrulama işlemleri yapmak için kullanılan bir kütüphane.",
-    isClicked: false,
   },
   {
     name: "Grommet",
@@ -388,7 +343,6 @@ const packages = [
     key: "grommet",
     enInfo:"A UI component library based on React.",
     info: "React tabanlı bir UI bileşenleri kütüphanesi.",
-    isClicked: false,
   },
 ];
 
