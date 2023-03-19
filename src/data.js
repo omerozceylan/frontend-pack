@@ -193,7 +193,7 @@ const packages = [
     name: "express",
     imgUrl: "https://miro.medium.com/max/1400/1*i2fRBk3GsYLeUk_Rh7AzHw.png",
     key: "express",
-    enInfo:'',
+    enInfo:'A web application framework based on Node.js.',
     info: "Node.js tabanlı bir web uygulama framework'ü.",
   },
   {
