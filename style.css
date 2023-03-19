@@ -564,23 +564,28 @@ section {
         z-index: 1;
     }
 
+    .rect {
+        color: #F0EDE2;
+    }
+
     .hamburger-svg {
+
+        background-color: #1D181A;
+        width: 50px;
+        height: 75px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #1D181A;
-        height: 75px;
-        padding-top:15px ;
-        width: 60px;
-        color: white;
-        z-index: 1000;
+        color: #F0EDE2;
     }
        
     .hamburger {
         display: block;
     }
 
-    
+    .the-hamburger {
+        filter: invert(99%) sepia(4%) saturate(2944%) hue-rotate(303deg) brightness(109%) contrast(87%);
+    }
 
     .open-menu {
         width: 100%;

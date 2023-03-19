@@ -1,0 +1,5 @@
+<svg class="the-hamburger" viewBox="0 0 100 80" width="30" height="30">
+            <rect class="rect" width="100" height="20"></rect>
+            <rect class="rect" y="30" width="100" height="20"></rect>
+            <rect class="rect" y="60" width="100" height="20"></rect>
+          </svg>
