@@ -24,6 +24,13 @@ const packages = [
     info: "Google tarafından geliştirilen bir JavaScript framework'ü, özellikle büyük ve karmaşık uygulamalar oluşturmak için kullanılır.",
   },
   {
+    name: "Deno",
+    key: "deno",
+    imgUrl: "https://deno.land/og/image.png",
+    enInfo:'A secure JavaScript and TypeScript runtime built on V8, Rust, and Tokio.',
+    info: "V8, Rust ve Tokio üzerine inşa edilmiş güvenli bir JavaScript ve TypeScript çalışma zamanı.",
+    },
+  {
     name: "Bootstrap",
     imgUrl:
       "https://smartstore.com/media/4771/content/Bootstrap_Logo_2000x615.jpg",
@@ -189,6 +196,107 @@ const packages = [
     enInfo:'',
     info: "Node.js tabanlı bir web uygulama framework'ü.",
   },
+  {
+    name: "Svelte",
+    key: "svelte",
+    imgUrl: "https://www.karabayyazilim.com/uploads/blogs/svelte-nedir-2020-11-03-135534/svelte-nedir-2020-11-03-135534.jpg",
+    enInfo: "A component framework that compiles your code at build time, resulting in smaller bundle sizes and faster load times.",
+    info: "Kodunuzu derleme zamanında derleyen bir bileşen framework'üdür, bu da daha küçük paket boyutları ve daha hızlı yükleme süreleri ile sonuçlanır."
+    },
+    {
+    name: "RxJS",
+    key: "rxjs",
+    imgUrl: "https://blog.consdata.tech/assets/img/posts/2020-01-09-rxjs-wstep/RxJS.png",
+    enInfo: "A reactive programming library that allows you to work with asynchronous data streams.",
+    info: "Asenkron veri akışlarıyla çalışmanıza olanak tanıyan reaktif bir programlama kütüphanesidir."
+    },
+    {
+    name: "Knockout.js",
+    key: "knockout",
+    imgUrl: "https://png.pngitem.com/pimgs/s/78-788613_knockoutjs-javascript-framework-knockout-js-logo-hd-png.png",
+    enInfo: "A JavaScript library that helps you create rich, responsive display and editor user interfaces.",
+    info: "Zengin, duyarlı görüntüleyici ve düzenleyici kullanıcı arayüzleri oluşturmanıza yardımcı olan bir JavaScript kütüphanesidir."
+    },
+    {
+    name: "Backbone.js",
+    key: "backbone",
+    imgUrl: "https://www.bairesdev.com/wp-content/uploads/2022/12/backbone-1.svg",
+    enInfo: "A JavaScript library that provides a structure for organizing code, with models, collections, and views.",
+    info: "Modeller, koleksiyonlar ve görünümlerle kodu düzenlemek için bir yapı sağlayan bir JavaScript kütüphanesidir."
+    },
+    {
+      name: "Feathers",
+      key: "@feathersjs/feathers",
+      imgUrl: "https://miro.medium.com/v2/resize:fit:1140/1*RUN5WtDYkDFc8StXIaIEkg.jpeg",
+      enInfo:'A lightweight and flexible web framework that allows you to create REST and real-time APIs quickly',
+      info: "Hafif ve esnek bir web framework'üdür ve REST ve gerçek zamanlı API'lerinin hızlı bir şekilde oluşturulmasına izin verir.",
+      },
+    
+      {
+      name: "Sapper",
+      key: "sapper",
+      imgUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--mqnTJMsI--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/rd8jrw8p8wallcp66wnb.png",
+      enInfo:'A framework for building high-performance web apps with Svelte',
+      info: "Svelte ile yüksek performanslı web uygulamaları oluşturmak için bir framework'tür.",
+      },
+      {
+      name: "Stencil",
+      key: "@stencil/core",
+      imgUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--Y0jIbLiK--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/kpfif2bnz0oq4o9bkpef.png",
+      enInfo:'A compiler for building fast, reusable web components',
+      info: "Hızlı, yeniden kullanılabilir web bileşenleri oluşturmak için bir derleyicidir.",
+      },
+  
+      {
+      name: "Winston",
+      key: "winston",
+      imgUrl: "https://www.jsdelivr.com/open-graph/image/npm/winston",
+      enInfo:'A versatile and powerful logging library for Node.js',
+      info: "Node.js için esnek ve güçlü bir loglama kütüphanesidir.",
+      },
+
+      {
+      name: "Zeit Now",
+      key: "now",
+      imgUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--_YeGONyZ--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/nz5x6zeajacanmyy643j.png",
+      enInfo:'A cloud platform for static and serverless deployments',
+      info: "Statik ve sunucusuz dağıtımlar için bir bulut platformudur.",
+      },
+        {
+        name: "GraphQL",
+        key: "graphql",
+        imgUrl: "https://www.reindex.io/blog/building-a-graphql-server-with-node-js-and-sql/GraphQL_NodeJS.png",
+        enInfo:'A query language for APIs and a runtime for executing those queries by using a type system defined for your data.',
+        info: "API'ler için bir sorgu dili ve verileriniz için tanımlanan bir tür sistemi kullanarak bu sorguları çalıştırmak için bir çalışma zamanı.",
+        },
+        {
+        name: "Fastify",
+        key: "fastify",
+        imgUrl: "https://repository-images.githubusercontent.com/69495170/8125e100-61bc-11e9-8d9f-eb01f522f962",
+        enInfo:'A fast and low overhead web framework for Node.js, highly focused on providing the best developer experience.',
+        info: "Geliştirici deneyimini en iyi şekilde sağlamaya odaklanan, Node.js için hızlı ve az maliyetli bir web framework'ü.",
+        },
+        {
+        name: "NestJS",
+        key: "nestjs",
+        imgUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--m_Ng9MLF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/fppjegg7q1kb2pdzmlvf.png",
+        enInfo:'A progressive Node.js framework for building efficient, reliable, and scalable server-side applications.',
+        info: "Verimli, güvenilir ve ölçeklenebilir sunucu taraflı uygulamalar oluşturmak için bir ilerleyici Node.js framework'ü.",
+        },
+        {
+        name: "RxJS",
+        key: "rxjs",
+        imgUrl: "https://malcoded.com/static/4416ca096472d7da64817eb3bd2c6687/f3583/Angular-RxJs.png",
+        enInfo:'A library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code.',
+        info: "Asenkron veya geri aramalı kodu daha kolay bir şekilde birleştirmek için Gözlemlenebilirler kullanarak reaktif programlama için bir kütüphane.",
+        },
+        {
+        name: "SocketCluster",
+        key: "socketcluster",
+        imgUrl: "https://insights.coinigy.com/content/images/2019/08/OKEx--3-.png",
+        enInfo:'A WebSocket server cluster for Node.js, designed to scale horizontally across CPU cores and vertically across multiple servers.',
+        info: "Node.js için yatay olarak CPU çekirdekleri üzerinde, dikey olarak da birden fazla sunucu üzerinde ölçeklendirilecek şekilde tasarlanmış bir WebSocket sunucu kümesi.",
+        },
   {
     name: "koa",
     imgUrl: "https://miro.medium.com/max/1140/1*_SEhpSaIh7-l1jV-yFgeDQ.jpeg",
@@ -358,114 +466,8 @@ const packages = [
     enInfo: "A JavaScript framework that emphasizes convention over configuration, making it easier to develop large-scale applications.",
     info: "Yapılandırmadan çok kurala vurgu yapan bir JavaScript framework'üdür, bu da büyük ölçekli uygulamaları geliştirmeyi kolaylaştırır."
     },
-    {
-    name: "Svelte",
-    key: "svelte",
-    imgUrl: "https://www.karabayyazilim.com/uploads/blogs/svelte-nedir-2020-11-03-135534/svelte-nedir-2020-11-03-135534.jpg",
-    enInfo: "A component framework that compiles your code at build time, resulting in smaller bundle sizes and faster load times.",
-    info: "Kodunuzu derleme zamanında derleyen bir bileşen framework'üdür, bu da daha küçük paket boyutları ve daha hızlı yükleme süreleri ile sonuçlanır."
-    },
-    {
-    name: "RxJS",
-    key: "rxjs",
-    imgUrl: "https://blog.consdata.tech/assets/img/posts/2020-01-09-rxjs-wstep/RxJS.png",
-    enInfo: "A reactive programming library that allows you to work with asynchronous data streams.",
-    info: "Asenkron veri akışlarıyla çalışmanıza olanak tanıyan reaktif bir programlama kütüphanesidir."
-    },
-    {
-    name: "Knockout.js",
-    key: "knockout",
-    imgUrl: "https://png.pngitem.com/pimgs/s/78-788613_knockoutjs-javascript-framework-knockout-js-logo-hd-png.png",
-    enInfo: "A JavaScript library that helps you create rich, responsive display and editor user interfaces.",
-    info: "Zengin, duyarlı görüntüleyici ve düzenleyici kullanıcı arayüzleri oluşturmanıza yardımcı olan bir JavaScript kütüphanesidir."
-    },
-    {
-    name: "Backbone.js",
-    key: "backbone",
-    imgUrl: "https://www.bairesdev.com/wp-content/uploads/2022/12/backbone-1.svg",
-    enInfo: "A JavaScript library that provides a structure for organizing code, with models, collections, and views.",
-    info: "Modeller, koleksiyonlar ve görünümlerle kodu düzenlemek için bir yapı sağlayan bir JavaScript kütüphanesidir."
-    },
-    {
-      name: "Feathers",
-      key: "@feathersjs/feathers",
-      imgUrl: "https://miro.medium.com/v2/resize:fit:1140/1*RUN5WtDYkDFc8StXIaIEkg.jpeg",
-      enInfo:'A lightweight and flexible web framework that allows you to create REST and real-time APIs quickly',
-      info: "Hafif ve esnek bir web framework'üdür ve REST ve gerçek zamanlı API'lerinin hızlı bir şekilde oluşturulmasına izin verir.",
-      },
     
-      {
-      name: "Sapper",
-      key: "sapper",
-      imgUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--mqnTJMsI--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/rd8jrw8p8wallcp66wnb.png",
-      enInfo:'A framework for building high-performance web apps with Svelte',
-      info: "Svelte ile yüksek performanslı web uygulamaları oluşturmak için bir framework'tür.",
-      },
-      {
-      name: "Stencil",
-      key: "@stencil/core",
-      imgUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--Y0jIbLiK--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/kpfif2bnz0oq4o9bkpef.png",
-      enInfo:'A compiler for building fast, reusable web components',
-      info: "Hızlı, yeniden kullanılabilir web bileşenleri oluşturmak için bir derleyicidir.",
-      },
-  
-      {
-      name: "Winston",
-      key: "winston",
-      imgUrl: "https://www.jsdelivr.com/open-graph/image/npm/winston",
-      enInfo:'A versatile and powerful logging library for Node.js',
-      info: "Node.js için esnek ve güçlü bir loglama kütüphanesidir.",
-      },
-
-      {
-      name: "Zeit Now",
-      key: "now",
-      imgUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--_YeGONyZ--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/nz5x6zeajacanmyy643j.png",
-      enInfo:'A cloud platform for static and serverless deployments',
-      info: "Statik ve sunucusuz dağıtımlar için bir bulut platformudur.",
-      },
-        {
-        name: "GraphQL",
-        key: "graphql",
-        imgUrl: "https://www.reindex.io/blog/building-a-graphql-server-with-node-js-and-sql/GraphQL_NodeJS.png",
-        enInfo:'A query language for APIs and a runtime for executing those queries by using a type system defined for your data.',
-        info: "API'ler için bir sorgu dili ve verileriniz için tanımlanan bir tür sistemi kullanarak bu sorguları çalıştırmak için bir çalışma zamanı.",
-        },
-        {
-        name: "Fastify",
-        key: "fastify",
-        imgUrl: "https://repository-images.githubusercontent.com/69495170/8125e100-61bc-11e9-8d9f-eb01f522f962",
-        enInfo:'A fast and low overhead web framework for Node.js, highly focused on providing the best developer experience.',
-        info: "Geliştirici deneyimini en iyi şekilde sağlamaya odaklanan, Node.js için hızlı ve az maliyetli bir web framework'ü.",
-        },
-        {
-        name: "NestJS",
-        key: "nestjs",
-        imgUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--m_Ng9MLF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/fppjegg7q1kb2pdzmlvf.png",
-        enInfo:'A progressive Node.js framework for building efficient, reliable, and scalable server-side applications.',
-        info: "Verimli, güvenilir ve ölçeklenebilir sunucu taraflı uygulamalar oluşturmak için bir ilerleyici Node.js framework'ü.",
-        },
-        {
-        name: "RxJS",
-        key: "rxjs",
-        imgUrl: "https://malcoded.com/static/4416ca096472d7da64817eb3bd2c6687/f3583/Angular-RxJs.png",
-        enInfo:'A library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code.',
-        info: "Asenkron veya geri aramalı kodu daha kolay bir şekilde birleştirmek için Gözlemlenebilirler kullanarak reaktif programlama için bir kütüphane.",
-        },
-        {
-        name: "SocketCluster",
-        key: "socketcluster",
-        imgUrl: "https://insights.coinigy.com/content/images/2019/08/OKEx--3-.png",
-        enInfo:'A WebSocket server cluster for Node.js, designed to scale horizontally across CPU cores and vertically across multiple servers.',
-        info: "Node.js için yatay olarak CPU çekirdekleri üzerinde, dikey olarak da birden fazla sunucu üzerinde ölçeklendirilecek şekilde tasarlanmış bir WebSocket sunucu kümesi.",
-        },
-        {
-        name: "Deno",
-        key: "deno",
-        imgUrl: "https://deno.land/og/image.png",
-        enInfo:'A secure JavaScript and TypeScript runtime built on V8, Rust, and Tokio.',
-        info: "V8, Rust ve Tokio üzerine inşa edilmiş güvenli bir JavaScript ve TypeScript çalışma zamanı.",
-        },
+      
       
 ];
 
