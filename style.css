@@ -455,10 +455,9 @@ section {
     display: none;
 }
 
-.hamburger {
+.the-hamburger {
     display: none;
-    cursor: pointer;
-    z-index: 1000;
+
 }
 
 .hamburger-icon:checked ~ .open-menu {
@@ -584,6 +583,7 @@ section {
     }
 
     .the-hamburger {
+        display: flex;
         filter: invert(99%) sepia(4%) saturate(2944%) hue-rotate(303deg) brightness(109%) contrast(87%);
         margin-right: 15px;
     }
