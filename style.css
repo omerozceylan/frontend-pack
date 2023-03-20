@@ -551,6 +551,11 @@ section {
        
     } */
 
+    .pop-up-button {
+        background-color: #1D181A;
+        color: #F0EDE2;
+    }
+
     .content-top {
         height: 50px;
     }
