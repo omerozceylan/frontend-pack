@@ -214,6 +214,10 @@ section {
     color: #F0EDE2;
 }
 
+.pop-up-button:focus {
+    outline: 0;
+}
+
 .pop-up-button-section {
     display: flex;
     justify-content: space-between;
