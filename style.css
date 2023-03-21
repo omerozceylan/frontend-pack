@@ -657,6 +657,7 @@ section {
 
 @media (max-width:425px){
 
+
     .items-info-button {
         width: 26px;
         height: 26px;
@@ -682,16 +683,20 @@ section {
         width: 260px;
     } */ 
 
-    .pop-up-inside {
-        width: 230px;
-        height: 250px;
-    }
 
     .pop-up-info {
-        height: 200px;
-        width: 190px;
+        height: 290px;
+        width: 280px;
+    }
+    
+    .pop-up-button {
+        font-size: 22px;
     }
 
+    .pop-up-inside{
+        width: 300px;
+        height: 200px;
+    }
 
 
 }
@@ -717,15 +722,19 @@ section {
         width: 260px;
     } */ 
 
-    .pop-up-inside {
-        width: 230px;
-        height: 250px;
+    .pop-up-info {
+        width: 260px;
+    }
+    
+    .pop-up-button {
+        font-size: 22px;
     }
 
-    .pop-up-info {
+    .pop-up-inside{
+        width: 280px;
         height: 200px;
-        width: 190px;
     }
+
 
 
 
