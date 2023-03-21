@@ -656,8 +656,52 @@ section {
 }
 
 @media (max-width:425px){
+
+    .items-info-button {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .items-title {
+        font-size: 26px;
+    }
     
     .items-img {
+        margin-top: 10px;
+        width: 250px;
+        height: 130px;
+        border: solid 2px black;
+    }
+
+   .items {
+        width: 270px;
+        height: 200px;
+    }
+
+    /* .show-code-div {
+        width: 260px;
+    } */ 
+
+    .pop-up-inside {
+        width: 230px;
+        height: 250px;
+    }
+
+    .pop-up-info {
+        height: 200px;
+        width: 190px;
+    }
+
+
+
+}
+
+
+@media (max-width:350px){
+
+
+    
+     .items-img {
         margin-top: 10px;
         width: 200px;
         height: 120px;
