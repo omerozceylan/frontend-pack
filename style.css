@@ -655,7 +655,7 @@ section {
     }
 }
 
-@media (max-width:350px){
+@media (max-width:425px){
     
     .items-img {
         margin-top: 10px;
