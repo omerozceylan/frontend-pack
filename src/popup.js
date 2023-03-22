@@ -8,6 +8,7 @@ const selectLanguage = document.querySelector('#language-select')
 const topMessage1 = document.querySelector('.top-message')
 
 selectLanguage.addEventListener('click', getSelectedLanguage)
+selectLanguage.addEventListener('touchstart', getSelectedLanguage)
 
 const LANGUAGE_VALUE = 'language'
 
