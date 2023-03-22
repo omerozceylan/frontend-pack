@@ -9,6 +9,7 @@ const topMessage1 = document.querySelector('.top-message')
 
 selectLanguage.addEventListener('click', getSelectedLanguage)
 
+
 const LANGUAGE_VALUE = 'language'
 
 atStart()
