@@ -114,4 +114,3 @@ function removeSelectedItems() {
     }
   });
 }
-

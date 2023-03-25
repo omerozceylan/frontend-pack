@@ -452,13 +452,6 @@ const packages = [
     enInfo:"A UI component library based on React.",
     info: "React tabanlı bir UI bileşenleri kütüphanesi.",
   },
-  {
-    name: "Laravel",
-    key: "laravel",
-    imgUrl: "https://www.mehmetcancan.com/dosyalar/2017/10/laravel.png",
-    enInfo: "A PHP framework designed for web application development, emphasizing elegant syntax and good documentation.",
-    info: "Web uygulama geliştirme için tasarlanmış bir PHP framework'üdür, zarif sözdizimi ve iyi belgelerle vurgu yapar."
-    },
     {
     name: "Ember.js",
     key: "ember",
