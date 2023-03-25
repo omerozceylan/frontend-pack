@@ -8,16 +8,17 @@ const selectLanguage = document.querySelector('#language-select')
 const topMessage1 = document.querySelector('.top-message')
 
 selectLanguage.addEventListener('click', getSelectedLanguage)
-selectLanguage.addEventListener('touchstart', getSelectedLanguage)
+
 
 
 const LANGUAGE_VALUE = 'language'
 
-atStart()
-
 function atStart(){
-  if(localStorage.getItem(LANGUAGE_VALUE)==='null'){
+  // console.log(localStorage.getItem(LANGUAGE_VALUE));
+  if(localStorage.getItem(LANGUAGE_VALUE)=='null' || localStorage.getItem(LANGUAGE_VALUE)===''){
+    console.log('null');
     localStorage.setItem(LANGUAGE_VALUE,'En')
+    selectLanguage.value = language
   }else{
     const language = localStorage.getItem(LANGUAGE_VALUE)
     changeTextsByLanguage(language)
@@ -25,6 +26,7 @@ function atStart(){
   }
 }
 
+atStart()
 
 function getSelectedLanguage(){
    let index = selectLanguage.selectedIndex
