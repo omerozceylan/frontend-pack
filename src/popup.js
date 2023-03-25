@@ -10,15 +10,13 @@ const topMessage1 = document.querySelector('.top-message')
 selectLanguage.addEventListener('click', getSelectedLanguage)
 
 
-
 const LANGUAGE_VALUE = 'language'
 
 function atStart(){
-  // console.log(localStorage.getItem(LANGUAGE_VALUE));
-  if(localStorage.getItem(LANGUAGE_VALUE)=='null' || localStorage.getItem(LANGUAGE_VALUE)===''){
+  if(localStorage.getItem(LANGUAGE_VALUE)==null){
     console.log('null');
     localStorage.setItem(LANGUAGE_VALUE,'En')
-    selectLanguage.value = language
+    selectLanguage.value = 'En'
   }else{
     const language = localStorage.getItem(LANGUAGE_VALUE)
     changeTextsByLanguage(language)
